@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class FilmDashboard < Administrate::BaseDashboard
+class ProductDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -9,9 +9,11 @@ class FilmDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
-    name: Field::String,
-    info: Field::String,
-    preview: Field::String,
+    title: Field::String,
+    price: Field::Number,
+    description: Field::String,
+    photos: MultipleImagesField,
+    status: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }
@@ -23,10 +25,9 @@ class FilmDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
-    :name,
-    :info,
-    :created_at,
-    :preview
+    :title,
+    :price,
+    :description,
   ]
 
   # SHOW_PAGE_ATTRIBUTES
@@ -37,15 +38,17 @@ class FilmDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :name,
-    :info,
-    :preview
+    :title,
+    :price,
+    :description,
+    :photos,
+    :status,
   ]
 
-  # Overwrite this method to customize how films are displayed
+  # Overwrite this method to customize how products are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(film)
-  #   "Film ##{film.id}"
+  # def display_resource(product)
+  #   "Product ##{product.id}"
   # end
 end

@@ -7,14 +7,6 @@ Rails.application.routes.draw do
     root controller: DashboardManifest::ROOT_DASHBOARD, action: :index
   end
 
-  # namespace :admin do
-  #   DashboardManifest::DASHBOARDS.each do |dashboard_resource|
-  #     resources dashboard_resource
-  #   end
-  #
-  #   root controller: DashboardManifest::ROOT_DASHBOARD, action: :index
-  # end
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
