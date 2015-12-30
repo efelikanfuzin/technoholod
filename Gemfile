@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem "administrate", "~> 0.1.2"
+gem "administrate", github: "thoughtbot/administrate"
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 
 group :development, :test do

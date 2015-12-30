@@ -1,0 +1,17 @@
+.image {
+
+  &-container {
+    display: inline-block;
+    position: relative;
+  }
+
+  &-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #FF5722;
+  }
+}
