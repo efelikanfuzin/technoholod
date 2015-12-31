@@ -26,8 +26,7 @@ class ProductDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :title,
-    :price,
-    :description,
+    :price
   ]
 
   # SHOW_PAGE_ATTRIBUTES
