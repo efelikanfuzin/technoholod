@@ -16,7 +16,7 @@ module Admin
     # See https://administrate-docs.herokuapp.com/customizing_controller_actions
     # for more information
     def resource_params
-      params.require(resource_name).permit(:title, :price, photos: [])
+      params.require(resource_name).permit(:title, :price, :description, photos: [])
     end
   end
 end

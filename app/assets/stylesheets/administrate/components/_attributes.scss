@@ -15,4 +15,12 @@
   @include span-columns(10 of 12);
   @include omega;
   margin-bottom: $base-spacing;
+
+  &--html-field {
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(41, 63, 84, 0.24),
+                0 2px 6px rgba(41, 63, 84, 0.24),
+                0 2px 6px rgba(41, 63, 84, 0.24),
+                0 2px 6px rgba(41, 63, 84, 0.24);
+  }
 }

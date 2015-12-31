@@ -11,7 +11,7 @@ class ProductDashboard < Administrate::BaseDashboard
     id: Field::Number,
     title: Field::String,
     price: Field::Number,
-    description: Field::String,
+    description: Field::HtmlField,
     photos: MultipleImagesField,
     status: Field::String,
     created_at: Field::DateTime,
