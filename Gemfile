@@ -14,6 +14,7 @@ gem "administrate", github: "thoughtbot/administrate"
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'mini_magick'
+gem "slim-rails"
 
 group :development, :test do
   gem 'byebug'
