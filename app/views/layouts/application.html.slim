@@ -1,7 +1,9 @@
 doctype html
 html
   head
-    title #{@title}
+    title = @title
+    meta name="description" content= @description
+    meta name="keywords" content= @keywords
     = stylesheet_link_tag    "application", media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag "application", 'data-turbolinks-track' => true
     = csrf_meta_tags
