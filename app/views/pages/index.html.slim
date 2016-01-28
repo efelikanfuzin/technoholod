@@ -1,0 +1,12 @@
+.banner
+
+.content
+  .stock
+    a.stock--sale(href="#")
+      span.stock_item_sale Распродажа товара
+    - for i in (1..7)
+      a.stock_item(href="#")
+        span.stock_item_price 56 700 руб.
+        = image_tag("stock_1.png")
+        p.stock_item_title Морозильный ларь Liebherr GT 4232
+        p.stock_item_desc 91.7х128.5х75.8, общий объем 403л, Австрия
