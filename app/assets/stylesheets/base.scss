@@ -7,3 +7,10 @@ body, p {
   height: 100%;
   margin: 0 auto;
 }
+
+.cf::after,
+.cf::before {
+  content: "";
+  display: table;
+  clear: both;
+}

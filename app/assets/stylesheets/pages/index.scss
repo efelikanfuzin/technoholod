@@ -1,3 +1,4 @@
+
 .banner {
   height: 264px;
   width: 100%;
@@ -9,6 +10,7 @@
 .stock {
   font-size: 0; // хак что бы не было расстояния между блоками
   margin: 30px 0;
+
 
   &_item {
     box-sizing: border-box;
