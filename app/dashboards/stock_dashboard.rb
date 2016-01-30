@@ -13,6 +13,7 @@ class StockDashboard < Administrate::BaseDashboard
     description: Field::Text,
     price: Field::Number.with_options(multiplier: 0.01, decimals: 2, prefix: '₽ '),
     sale_price: Field::Number.with_options( multiplier: 0.01, decimals: 2, prefix: '₽ '),
+    preview: ImageField,
     amount: Field::Number,
     tags: Field::String,
     created_at: Field::DateTime,
@@ -43,6 +44,7 @@ class StockDashboard < Administrate::BaseDashboard
     :description,
     :price,
     :sale_price,
+    :preview,
     :amount,
     :tags,
   ]
