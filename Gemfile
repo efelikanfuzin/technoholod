@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem "administrate", github: "thoughtbot/administrate"
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
+gem "mini_magick"
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'mini_magick'
 gem "slim-rails"
