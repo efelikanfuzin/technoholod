@@ -15,6 +15,7 @@
     border-right: 1px solid #d9d9d9;
     cursor: pointer;
     margin-left: -4px;
+    
     &:first-child {
       border-left: 1px solid #d9d9d9;
     }
@@ -26,41 +27,4 @@
     font-weight: 900;
     color: #014d89;
   }
-}
-
-// hover effect
-.hvr-sweep-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  position: relative;
-  transition-property: color;
-  transition-duration: 0.3s;
-}
-.hvr-sweep-to-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2098d1;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-.hvr-sweep-to-right:hover,
-.hvr-sweep-to-right:focus,
-.hvr-sweep-to-right:active {
-  color: white;
-}
-.hvr-sweep-to-right:hover:before,
-.hvr-sweep-to-right:focus:before,
-.hvr-sweep-to-right:active:before {
-  transform: scaleX(1);
 }

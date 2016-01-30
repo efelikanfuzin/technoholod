@@ -11,7 +11,6 @@
   font-size: 0; // хак что бы не было расстояния между блоками
   margin: 30px 0;
 
-
   &_item {
     box-sizing: border-box;
     display: inline-block;
@@ -51,9 +50,9 @@
     }
 
     img {
-      margin: 0 auto;
+      margin: 50px auto;
       display: block;
-      margin-top: 25px;
+      margin-bottom: 25px;
     }
 
     &_title {
