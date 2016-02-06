@@ -3,6 +3,7 @@
   height: 300px;
   background: #0093e0;
   clear: both;
+  margin-bottom: 40px;
 
   &_slide {
     width: 80%;
@@ -13,7 +14,7 @@
   &_prev, &_next {
     position: absolute;
     top: 50%;
-    width: 42px;
+    width: 43px;
     height: 43px;
     z-index: 10;
     cursor: pointer;

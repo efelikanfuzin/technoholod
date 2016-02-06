@@ -1,6 +1,6 @@
 
 .banner {
-  height: 264px;
+  height: 300px;
   width: 100%;
   min-width: 1200px;
   background: url(slide_1.png) center center no-repeat;
@@ -78,14 +78,12 @@
   }
 }
 
-.about_th {
+.about {
   display: inline-block;
   width: 850px;
   float: left;
   margin-bottom: 30px;
-}
 
-.about {
   &_title {
     margin: 0;
     font-size: 20px;
@@ -100,7 +98,7 @@
 }
 
 .feedback {
-  width: 295px;
+  width: 290px;
   float: left;
   display: inline-block;
   margin-left: 50px;
@@ -146,5 +144,15 @@
     width: 80%;
     border-radius: 3px;
     box-shadow: none;
+  }
+}
+
+.provider {
+  padding: 0 40px 30px;
+
+  &_img {
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: middle;
   }
 }

@@ -1,4 +1,8 @@
-.banner
+.swiper-container
+  .swiper-wrapper
+    .swiper-slide
+      .banner
+
 
 .content
   .stock.cf
@@ -11,7 +15,7 @@
         p.stock_item_title =stock.title
         p.stock_item_desc =stock.description
   
-  .about_th
+  .about
     h1.about_title ООО «ТехноХолод» - надежный поставщик оборудования в Брянске  
 
     p.about_text Компания ТехноХолод - крупнейший поставщик комплексных решений для промышленных предприятий России. Мы оснащаем предприятия всем необходимым, выполняя функции внешнего отдела снабжения. Компания ТехноХолод поставляет автоматизированные системы управления, контрольно-измерительные приборы, вычислительную технику, аналитические приборы, лабораторное и весовое оборудование, расходные материалы и многое другое. Ассортимент поставляемой нами продукции постоянно растет и сейчас включает в себя несколько тысяч позиций. Уже более двухсот компаний-производителей являются нашими партнёрами. Среди них такие компании как Mettler Toledo, Siemens, Fuji Electric, IBM, HP.
@@ -29,7 +33,14 @@
       = submit_tag("ОТПРАВИТЬ ЗАЯВКУ", class: 'form-submit')
       
   = render 'reviews'
-
+  
+  .provider
+    = image_tag("provider_1.png", class: 'provider_img')
+    = image_tag("provider_2.png", class: 'provider_img')
+    = image_tag("provider_3.png", class: 'provider_img')
+    = image_tag("provider_2.png", class: 'provider_img')
+    = image_tag("provider_1.png", class: 'provider_img')
+    
 
 
 
