@@ -16,7 +16,8 @@ gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 gem "mini_magick"
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'mini_magick'
-gem "slim-rails"
+gem 'slim-rails'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'

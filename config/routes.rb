@@ -1,15 +1,17 @@
 Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
-  namespace :admin do
-    DashboardManifest::DASHBOARDS.each do |dashboard_resource|
-      resources dashboard_resource
+  authenticate :user do
+    namespace :admin do
+      DashboardManifest::DASHBOARDS.each do |dashboard_resource|
+        resources dashboard_resource
+      end
+      root controller: DashboardManifest::ROOT_DASHBOARD, action: :index
     end
-
-    root controller: DashboardManifest::ROOT_DASHBOARD, action: :index
   end
 
   root 'pages#index'
   resources :stocks
+  devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

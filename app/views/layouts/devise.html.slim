@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title Регистрация
+    = stylesheet_link_tag "registration", media: 'all'
+    = csrf_meta_tags
+  body
+  .content
+    = yield
