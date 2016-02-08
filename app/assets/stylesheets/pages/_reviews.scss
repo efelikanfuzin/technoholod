@@ -22,12 +22,12 @@
   }
 
   &_prev {
-    background-image: url(prev_btn.png);
+    background-image: url(asset-path('prev_btn.png'));
     left: 50px;
     right: auto;
   }
   &_next {
-    background-image: url(next_btn.png);
+    background-image: url(asset-path('next_btn.png'));
     right: 50px;
     left: auto;
   }
@@ -40,7 +40,7 @@
     &_avatar {
       width: 128px;
       height: 128px;
-      background: url(avatar.png);
+      background: url(asset-path('avatar.png'));
       display: inline-block;
       position: relative;
     }
