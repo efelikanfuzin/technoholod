@@ -1,5 +1,5 @@
 # Change these
-server '82.196.7.203', port: 3000, roles: [:web, :app, :db], primary: true
+server '82.196.7.203', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:efelikanfuzin/technoholod.git'
 set :application,     'tehnoholod'
