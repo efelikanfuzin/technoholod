@@ -23,16 +23,18 @@
     
 .content
   .stock.cf
-    a.stock--sale(href="#")
+    .stock--sale
       span.stock_item_sale Распродажа товара
     - if @stocks  
       - for stock in @stocks
-        a.stock_item(href="#")
+        .stock_item
           span.stock_item_price = "#{stock.sale_price} P"
           = image_tag(stock.preview.thumb)
+          .stock_field
+              a.stock_item_more(href='#') ПОДРОБНЕЕ
           p.stock_item_title =stock.title
           p.stock_item_desc =stock.description
-  
+    
   .about
     h1.about_title ООО «ТехноХолод» - надежный поставщик оборудования в Брянске  
 

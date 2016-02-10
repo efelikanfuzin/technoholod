@@ -11,6 +11,11 @@
   font-size: 0; // хак что бы не было расстояния между блоками
   margin: 30px 0;
 
+  &_field {
+    text-align: center;
+    display: none;
+  }
+
   &_item {
     box-sizing: border-box;
     display: inline-block;
@@ -55,6 +60,18 @@
       margin-bottom: 25px;
     }
 
+    &_more {
+      display: inline-block;;
+      width: 70%;
+      margin: 0 auto;
+      padding: 10px 0;
+      text-align: center;
+      border: 1px solid #c10302;
+      color: #c10302;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
     &_title {
       font-size: 1.1rem;
       font-weight: 600;
@@ -63,6 +80,14 @@
     &_desc {
       font-size: .8rem;
       color: #6b6b6b;
+    }
+
+    &:hover > .stock_field {
+      display: block;
+    }
+
+    &:hover > p {
+      display: none;
     }
   }
 
