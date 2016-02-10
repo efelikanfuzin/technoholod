@@ -1,9 +1,26 @@
-.swiper-container
-  .swiper-wrapper
-    .swiper-slide
-      .banner
+.content
+  .swiper-container
+    .swiper-wrapper
+      .swiper-slide.banner
 
-
+.content.cf
+  .pros
+    .pros_item
+      = image_tag('pros_1.svg', class: 'pros_img_1')
+      .pros_text  Доставляем товар в любую точку города
+    .pros_item
+      = image_tag('pros_2.svg')
+      .pros_text  Полная документация, гарантия до пяти лет
+    .pros_item
+      = image_tag('pros_3.svg')
+      .pros_text  Весь товар сертифицирован, качество гарантировано
+    .pros_item
+      = image_tag('pros_4.svg', class: 'pros_img_4')
+      .pros_text  Вы можете приобрести товар в рассрочку
+    .pros_item
+      = image_tag('pros_5.svg', class: 'pros_img_5')
+      .pros_text  Осуществляем замену товара в случае брака
+    
 .content
   .stock.cf
     a.stock--sale(href="#")
