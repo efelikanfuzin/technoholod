@@ -29,6 +29,7 @@
       - for stock in @stocks
         .stock_item
           span.stock_item_price = "#{stock.sale_price} P"
+          span.stock_item_old-price = "#{stock.price} руб."
           = image_tag(stock.preview.thumb)
           .stock_field
               a.stock_item_more(href='#') ПОДРОБНЕЕ
