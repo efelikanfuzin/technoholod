@@ -21,12 +21,13 @@ gem 'mini_magick'
 gem 'slim-rails'
 gem 'devise'
 
-group :development, :test do
-  gem 'byebug'
-  gem 'pry'
+group :assets do
+  gem 'turbo-sprockets-rails3'
 end
 
 group :development do
+  gem 'byebug'
+  gem 'pry'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'capistrano',         require: false
@@ -34,7 +35,7 @@ group :development do
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
-  gem 'capistrano-faster-assets', '~> 1.0'
+  # gem 'capistrano-faster-assets', '~> 1.0'
 end
 
 source 'https://rails-assets.org' do
