@@ -11,4 +11,7 @@
 // about supported directives.
 //
 //= require jquery
-//= require index
+//= require jquery_ujs
+//= require turbolinks
+//= require swiper
+//= require_tree .
