@@ -20,27 +20,24 @@
   }
 
   &_item {
+    width: 280px;
+    height: 320px;
+    background: #fff;
     box-sizing: border-box;
     display: inline-block;
     position: relative;
     float: left;
-    width: 300px;
-    height: 320px;
-    border-right: 1px solid $gray;
-    border-bottom: 1px solid $gray;
+    // border-right: 1px solid $gray;
+    border: 1px solid $gray;
     padding: 10px;
     text-decoration: none;
     color: #000;
     cursor: pointer;
+    margin-right: 25px;
+    margin-bottom: 35px;
 
-    &:nth-child(5),
-    &:nth-child(2) {
-      border-left: 1px solid $gray;
-    }
-
-    &:nth-child(2), &:nth-child(3),
-    &:nth-child(4), &:nth-child(5) {
-      border-top: 1px solid $gray;
+    &:nth-child(4n) {
+      margin-right: 0;
     }
 
     &_sale {
@@ -88,12 +85,13 @@
     &_title {
       font-size: 1.1rem;
       font-weight: 600;
-      color: blue;
+      background: inherit;
     }
 
     &_desc {
       font-size: .8rem;
       color: #6b6b6b;
+      background: inherit;
     }
 
     &:hover > .stock_field {

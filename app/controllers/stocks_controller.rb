@@ -1,7 +1,12 @@
 class StocksController < ActionController::Base
+  layout 'application'
   before_action :get_stock, only: :show
 
   def show
+  end
+
+  def index
+    @stocks = Stock.limit(20)
   end
 
   private

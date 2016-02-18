@@ -3,7 +3,7 @@ class PagesController < ActionController::Base
   before_action :set_meta_information
 
   def index
-    @stocks = Stock.all
+    @stocks = Stock.limit(7)
   end
 
   private
