@@ -1,4 +1,4 @@
-class StocksController < ActionController::Base
+class StocksController < ApplicationController
   layout 'application'
   before_action :get_stock, only: :show
 
@@ -12,7 +12,6 @@ class StocksController < ActionController::Base
   private
 
   def get_stock
-    @stock = Stock.find_by(id: params[:id])
-    render status: 404 and return unless @stock
+    @stock = Stock.find_by(id: params[:id]) or not_found
   end
 end

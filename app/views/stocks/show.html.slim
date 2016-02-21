@@ -1,3 +1,27 @@
-h1 = @stock.title
-p = @stock.description
-span.price = @stock.price
+.content
+  a href="/" Главная
+  span >
+  a href="/stocks" Распродажа
+  span >
+  span = @stock.title
+
+  .stock-wrapper.cf
+    h1 = @stock.title
+    .stock-left-col
+      = image_tag(@stock.preview.thumb, class: 'stock_img_big stock_img')
+      = image_tag(@stock.preview.thumb, class: 'stock_img')
+      = image_tag(@stock.preview.thumb, class: 'stock_img')
+      = image_tag(@stock.preview.thumb, class: 'stock_img')
+      a.stock_buy-btn href='#' ЗАКАЗАТЬ
+    .stock-right-col
+      .stock_price = "#{@stock.price} РУБ."
+      hr.stock_hr
+      .stock-info_desc
+        h3 ОПИСАНИЕ
+        .stock_desc
+          = raw @stock.description
+        - if @stock.features  
+          .stock_features
+            hr.stock_hr
+            h3 ХАРАКТЕРИСТИКИ
+            = raw @stock.features           
