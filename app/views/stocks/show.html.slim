@@ -1,9 +1,10 @@
 .content
-  a href="/" Главная
-  span >
-  a href="/stocks" Распродажа
-  span >
-  span = @stock.title
+  .breadcrumbs
+    a href="/" Главная
+    span.arrow >
+    a href="/stocks" Распродажа
+    span.arrow >
+    span.last = @stock.title
 
   .stock-wrapper.cf
     h1 = @stock.title
