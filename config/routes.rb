@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   end
 
   root 'pages#index'
+  get '/about' => 'pages#about'
   resources :stocks
   devise_for :users
 

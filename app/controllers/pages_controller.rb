@@ -6,6 +6,9 @@ class PagesController < ApplicationController
     @stocks = Stock.limit(7)
   end
 
+  def about
+  end
+
   private
 
   def set_meta_information
