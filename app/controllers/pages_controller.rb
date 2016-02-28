@@ -9,6 +9,9 @@ class PagesController < ApplicationController
   def about
   end
 
+  def products
+  end
+
   private
 
   def set_meta_information

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   root 'pages#index'
   get '/about' => 'pages#about'
+  get '/products' => 'pages#products'
   resources :stocks
   devise_for :users
 
