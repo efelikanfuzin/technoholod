@@ -20,6 +20,8 @@ gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'mini_magick'
 gem 'slim-rails'
 gem 'devise'
+gem 'friendly_id'
+gem 'babosa'
 
 group :assets do
   gem 'turbo-sprockets-rails3'

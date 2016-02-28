@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about'
   get '/products' => 'pages#products'
   resources :stocks
+  resources :products, only: [:show]
   devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.

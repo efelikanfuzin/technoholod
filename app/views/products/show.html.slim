@@ -1,0 +1,13 @@
+.content
+  .breadcrumbs
+    a href="/" Главная
+    span.arrow >
+    span.last Продукция
+    span.arrow >
+    span.last = @product.title
+  
+  .left-side
+    = render 'shared/product_menu'
+  .right-side.cf
+    h1 = @product.title
+    p = raw @product.description

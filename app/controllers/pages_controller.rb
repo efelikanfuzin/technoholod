@@ -10,6 +10,7 @@ class PagesController < ApplicationController
   end
 
   def products
+    @product = Product.all
   end
 
   private

@@ -12,8 +12,11 @@ class ProductDashboard < Administrate::BaseDashboard
     title: Field::String,
     price: Field::Number,
     description: HtmlField,
-    photos: MultipleImagesField,
+    avatar: ImageField,
     status: Field::String,
+    products_type: EnumSelectField.with_options(
+      choices: Product.products_types.keys
+    ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }
@@ -38,10 +41,9 @@ class ProductDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :title,
-    :price,
     :description,
-    :photos,
-    :status,
+    :avatar,
+    :products_type
   ]
 
   # Overwrite this method to customize how products are displayed
