@@ -22,12 +22,9 @@
     border-right: 1px solid #d9d9d9;
     cursor: pointer;
     transition: .3s font-weight;
-
-    a {
-      box-sizing: border-box;
-      text-decoration: none;
-      color: #191012;
-    }
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #191012;
 
     &:first-child {
       border-left: 1px solid #d9d9d9;
@@ -35,12 +32,10 @@
 
     &:hover {
       font-weight: 400;
-
-      a {
-        color: #014d89;
-      }
+      color: #014d89;
     }
   }
+  
   &_phone {
     display: inline-block;
     padding-left: 15px;
