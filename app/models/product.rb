@@ -1,7 +1,7 @@
 class Product < ActiveRecord::Base
-  include FriendlyId
+  extend FriendlyId
 
-  friendly_id :title, use: [:slugged], slug_column: :title
+  friendly_id :title, use: [:slugged]
   enum products_type: [ :shop, :catering, :dishes ]
   mount_uploader :avatar, PreviewUploader
 

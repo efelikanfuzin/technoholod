@@ -1,5 +1,4 @@
 class StocksController < ApplicationController
-  layout 'application'
   before_action :get_stock, only: :show
 
   def show

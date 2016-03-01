@@ -1,5 +1,4 @@
 class PagesController < ApplicationController
-  layout 'application'
   before_action :set_meta_information
 
   def index
