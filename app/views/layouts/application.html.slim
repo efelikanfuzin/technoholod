@@ -9,9 +9,9 @@ html
     = javascript_include_tag "application"
     = csrf_meta_tags
   body
-    .wrapper
-      .content
-        = render 'shared/header'
+    
+    = render 'shared/header'
     = yield
+    = render 'shared/footer'
     = render 'shared/metrica'
     

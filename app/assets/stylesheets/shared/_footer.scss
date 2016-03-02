@@ -1,0 +1,65 @@
+.wrapper._footer{
+  border-top: 1px solid #ccc;
+}
+.footer{
+  padding: 20px 0;
+  &_copy{
+    display: inline-block;
+    color: #838383;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 56px;
+    float: left;
+    margin-top: 10px;
+  }
+  &_item{
+    display: inline-block;
+    color: #010101;
+    font-size: 16px;
+    line-height: 26px;
+    transition: all 0.6s;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 19px;
+    float: left;
+    margin-top: 6px;
+    &:hover{
+      color: #014d89;
+    }
+  }
+  &_contacts{
+    display: inline-block;
+    margin-right: 44px;
+    float: left;
+    &-phone{
+      color: #014d89;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 18px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    &-adress{
+      color: #014d89;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 18px;
+    }
+  }
+  &_btn{
+    display: inline-block;
+    background-color: #c10302;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.6s;
+    float: left;
+    &:hover{
+      background-color: #9A0306;
+    }
+  }
+}
