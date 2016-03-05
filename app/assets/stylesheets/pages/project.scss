@@ -1,3 +1,7 @@
+._projects {
+  min-height: calc(100vh - 175px);
+}
+
 .project-item {
   border: 3px solid #7dc6ed;
   padding: 15px;
@@ -6,6 +10,7 @@
   margin-bottom: 15px;
   color: black;
   transition: all 0.6s;
+
   &:hover {
     border: 3px solid rgba(16, 84, 120, 0.62);
     background-color: rgba(179, 222, 229, 0.16);

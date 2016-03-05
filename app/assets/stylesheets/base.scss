@@ -1,7 +1,10 @@
-body, p {
+body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #f8f8f8;
+}
+p {
+  margin: 0;
 }
 .content {
   width: 1200px;

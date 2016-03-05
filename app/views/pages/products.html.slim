@@ -13,13 +13,12 @@
       = link_to(shop, class: 'product_item')
         = image_tag(shop.avatar, width: 250)
         .product_item_name = shop.title
-      
+        
     .product_title ОБОРУДОВАНИЕ ДЛЯ МАГАЗИНА
     - for catering in @product.catering
       = link_to(catering, class: 'product_item')
         = image_tag(catering.avatar, width: 250)
         .product_item_name = catering.title
-
       
     .product_title ОБОРУДОВАНИЕ ДЛЯ МАГАЗИНА
     - for dishes in @product.dishes
