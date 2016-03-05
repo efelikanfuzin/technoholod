@@ -13,6 +13,7 @@ class DashboardManifest
     :pages,
     :stocks,
     :products,
+    :projects,
 
   ]
 
