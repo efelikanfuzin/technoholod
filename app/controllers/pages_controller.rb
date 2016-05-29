@@ -6,6 +6,9 @@ class PagesController < ApplicationController
   def about
   end
 
+  def contacts
+  end
+
   def products
     @product = Product.all
   end
