@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   resources :stocks
   resources :projects
   resources :products, only: [:show]
+  resource :blog, only: [:show, :index]
   devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.
