@@ -31,3 +31,56 @@
     text-transform: uppercase;
   }
 }
+
+.project-container{
+  margin-bottom:30px;
+  
+}
+.project-img{
+  width: 265px;
+  height: 200px;
+  display:inline-block;
+  float: left;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.project-text{
+  width: 900px;
+  display:inline-block;
+  float: left;
+  margin-left:35px;
+}
+.project-gall{
+  position:relative;
+}
+.project-gall-container{
+  position: static;
+}
+.project-gall-wrapper{
+  //position:static;
+}
+.project-gall-prev{
+  top:111px;
+  left: -30px;
+}
+.project-gall-next{
+  top:111px;
+   right: -30px;
+}
+
+.project-banner {
+  width: 295px;
+  height: 220px;
+  background: url(asset-path('project-img.png')) center center no-repeat;
+  background-size: contain;
+  &._1{
+    background: url(asset-path('project-img.png')) center center no-repeat;
+    background-size: contain;
+  }
+  &._2{
+    background: url(asset-path('project-img.png')) center center no-repeat;
+    background-size: contain;
+  }
+}

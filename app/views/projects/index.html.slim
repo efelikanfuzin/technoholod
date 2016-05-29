@@ -8,7 +8,7 @@
   
   - for project in @projects
   
-    a.project-item  href="/"
+    = link_to project, class: 'project-item'
       = image_tag(project.preview_img, width: '200', class: 'project-item_preview')
       h3.project-item_title = project.title 
       project-item_content = raw project.preview
