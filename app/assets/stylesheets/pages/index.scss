@@ -8,6 +8,14 @@
   min-width: 1200px;
   background: url(asset-path('slide_1.png')) center center no-repeat;
   background-size: cover;
+  &._1{
+    background: url(asset-path('slide_1.png')) center center no-repeat;
+    background-size: cover;
+  }
+  &._2{
+    background: url(asset-path('slide_2.png')) center center no-repeat;
+    background-size: cover;
+  }
 }
 
 .stock {
