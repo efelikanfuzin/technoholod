@@ -41,10 +41,10 @@
     &_avatar {
       width: 128px;
       height: 128px;
-      background: url(asset-path('avatar.png'));
       display: inline-block;
       position: relative;
-      margin-left:20px;
+      margin-left: 20px;
+      border-radius: 50%;
     }
 
     &_name {
@@ -130,4 +130,11 @@
                   rgb(0, 146, 223) 59px 59px,
                   rgb(0, 147, 224) 60px 60px;
   }
+}
+
+.review_1 {
+  background: url(asset-path('review_1.png'));
+}
+.review_2 {
+  background: url(asset-path('review_2.png'));
 }

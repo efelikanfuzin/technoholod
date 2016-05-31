@@ -14,7 +14,7 @@ class DashboardManifest
     :stocks,
     :products,
     :projects,
-
+    :blogs,
   ]
 
   # `ROOT_DASHBOARD`

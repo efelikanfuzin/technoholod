@@ -1,10 +1,20 @@
 .product-menu
-  - for product_type in Product.products_types
-    .product-menu_item
-      span.product-menu_item_title = product_type.first
-      .product-menu_item_sub
-        a href="/" Через прилавок
-      .product-menu_item_sub
-        a href="/" Самообслуживание 
-      .product-menu_item_sub
-        a href="/" Самообслуживание 
+  / - for product_type in Product.products_types
+  .product-menu_item
+    span.product-menu_item_title Оборудование для общепита
+    .product-menu_item_sub
+      a href="/" Тепловое
+    .product-menu_item_sub
+      a href="/" Электромеханическое
+    .product-menu_item_sub
+      a href="/" Нейтральное
+    .product-menu_item_sub
+      a href="/" Холодильное
+    .product-menu_item_sub
+      a href="/" Посудомоечное
+    .product-menu_item_sub
+      a href="/" Фаст-фуд
+    .product-menu_item_sub
+      a href="/" Для раздачи готовых блюд
+    .product-menu_item_sub
+      a href="/" Для бара
