@@ -1,5 +1,10 @@
 .content
-  h1 КАТАЛОГ
+  .breadcrumbs
+    a href="/" Главная
+    span.arrow >
+    span.last Распродажа
+    
+  h1 Каталог
   .stock.cf
     - for stock in @stocks
       .stock_item
@@ -10,7 +15,7 @@
             = link_to('ПОДРОБНЕЕ', stock, class: 'stock_item_more')
         p.stock_item_title =stock.title
         p.stock_item_desc =stock.description
-
+  
 
       
   

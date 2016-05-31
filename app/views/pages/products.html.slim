@@ -7,7 +7,7 @@
   .left-side
     = render 'shared/product_menu'
   .right-side.cf
-    strong ПРОДУКЦИЯ
+    h1 ПРОДУКЦИЯ
     .product_title ОБОРУДОВАНИЕ ДЛЯ МАГАЗИНА
     - for shop in @product.public_catering
       = link_to(shop, class: 'product_item')

@@ -64,10 +64,12 @@
 .project-gall-prev{
   top:111px;
   left: -30px;
+  background: url(asset-path('prev.png')) center center no-repeat;
 }
 .project-gall-next{
   top:111px;
-   right: -30px;
+  right: -30px;
+  background: url(asset-path('next.png')) center center no-repeat;
 }
 
 .project-banner {
