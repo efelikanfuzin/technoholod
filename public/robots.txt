@@ -1,6 +1,2 @@
 User-agent: *
-Host: http://www.tehnoholod.ru/
-Disallow: /admin
-
-
-Sitemap: http://www.tehnoholod.ru/sitemap.xml
+Disallow: /
