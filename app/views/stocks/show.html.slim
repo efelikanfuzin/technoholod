@@ -9,13 +9,12 @@
   .stock-wrapper.cf
     h1 = @stock.title
     .stock-left-col
-      = image_tag(@stock.preview.thumb, class: 'stock_img_big stock_img')
-      = image_tag(@stock.preview.thumb, class: 'stock_img')
-      = image_tag(@stock.preview.thumb, class: 'stock_img')
-      = image_tag(@stock.preview.thumb, class: 'stock_img')
-      a.stock_buy-btn href='#' ЗАКАЗАТЬ
+      a.fancybox href="#{@stock.preview.url}"
+        = image_tag(@stock.preview.thumb, class: 'stock_img_big stock_img')
     .stock-right-col
-      .stock_price = "#{@stock.price} РУБ."
+      .cf 
+        .stock_price.stock_price-show = "#{@stock.price} ₽"
+        a.stock_buy-btn.stock_buy-btn-show href='#' ЗАКАЗАТЬ
       hr.stock_hr
       .stock-info_desc
         h3 ОПИСАНИЕ

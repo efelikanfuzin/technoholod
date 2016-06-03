@@ -126,7 +126,7 @@
 
 .stock {
   &_img {
-    border: 1px solid #868686;
+    // border: 1px solid #868686;
     display: inline-block;
     width: 100px;
     margin-right: 8px;
@@ -151,6 +151,12 @@
     &:hover{
       background-color: #c10302;
     }
+
+    &-show {
+      float: right;
+      margin: 0;
+      width: auto;
+    }
   }
 
   &_price {
@@ -161,6 +167,13 @@
     background: #c10302;
     color: #fff;
     font-size: 30px;
+
+    &-show {
+      float: left;
+      width: auto;
+      padding: 5px 15px;
+      display: inline-block;
+    }
   }
 
   &_features {
@@ -187,7 +200,7 @@
   }
 
   &_hr {
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: #b7b7b7;
   }
 }

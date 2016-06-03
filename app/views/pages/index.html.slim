@@ -29,8 +29,8 @@
     - if @stocks  
       - for stock in @stocks
         .stock_item
-          span.stock_item_price = "#{stock.sale_price} P"
-          span.stock_item_old-price = "#{stock.price} руб."
+          span.stock_item_price = "#{stock.sale_price} ₽"
+          span.stock_item_old-price = "#{stock.price} ₽"
           = image_tag(stock.preview.thumb)
           .stock_field
             = link_to('ПОДРОБНЕЕ', stock, class: 'stock_item_more')

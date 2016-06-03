@@ -10,7 +10,7 @@ class StockDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     title: Field::String,
-    description: HtmlField,
+    description: Field::Text,
     features: HtmlField,
     price: Field::Number.with_options(multiplier: 0.01, decimals: 2, prefix: '₽ '),
     sale_price: Field::Number.with_options( multiplier: 0.01, decimals: 2, prefix: '₽ '),

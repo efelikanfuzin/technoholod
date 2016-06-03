@@ -25,6 +25,7 @@ gem 'babosa'
 
 group :assets do
   gem 'turbo-sprockets-rails3'
+  gem 'fancybox-rails'
 end
 
 group :development do

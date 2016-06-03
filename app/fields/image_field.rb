@@ -1,4 +1,4 @@
-require "administrate/fields/base"
+# require "administrate/fields/base"
 
 class ImageField < Administrate::Field::Base
   def url

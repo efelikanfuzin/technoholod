@@ -1,4 +1,4 @@
-require "administrate/fields/base"
+# require "administrate/fields/base"
 
 class HtmlField < Administrate::Field::Base
   def to_s

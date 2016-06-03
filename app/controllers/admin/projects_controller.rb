@@ -9,11 +9,12 @@ module Admin
     # end
 
     # Define a custom finder by overriding the `find_resource` method:
-    
+
     # See https://administrate-docs.herokuapp.com/customizing_controller_actions
     # for more information
-    # def resource_params
-    #   params.require(resource_name).permit(:title, :price, :description, photos: [])
-    # end
+    def resource_params
+      params.require(resource_name).permit(:title, :content, :preview, :preview_img,
+                                           :keywords, :description, photos: [])
+    end
   end
 end
