@@ -7,7 +7,7 @@
     span.last = @product.title
   
   .left-side
-    = render 'shared/product_menu'
+    = render 'shared/product_menu', products: @products
   .right-side.cf
     h1 = @product.title
     p = raw @product.description

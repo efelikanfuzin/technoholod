@@ -1,20 +1,14 @@
 .product-menu
-  / - for product_type in Product.products_types
   .product-menu_item
     span.product-menu_item_title Оборудование для общепита
-    .product-menu_item_sub
-      a href="/" Тепловое
-    .product-menu_item_sub
-      a href="/" Электромеханическое
-    .product-menu_item_sub
-      a href="/" Нейтральное
-    .product-menu_item_sub
-      a href="/" Холодильное
-    .product-menu_item_sub
-      a href="/" Посудомоечное
-    .product-menu_item_sub
-      a href="/" Фаст-фуд
-    .product-menu_item_sub
-      a href="/" Для раздачи готовых блюд
-    .product-menu_item_sub
-      a href="/" Для бара
+    - for product in products.public_catering
+      .product-menu_item_sub
+        = link_to product.title, product
+    span.product-menu_item_title Оборудование для магазина
+    - for product in products.store_items
+      .product-menu_item_sub
+        = link_to product.title, product
+    span.product-menu_item_title Мебель, посуда, сервировка
+    - for product in products.furniture
+      .product-menu_item_sub
+        = link_to product.title, product

@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
   $(".fancybox").fancybox();
+  $("a#inline").fancybox({
+    showCloseButton: true
+	});
 
   Swiper('.swiper-container', {
     pagination: '.swiper-pagination',

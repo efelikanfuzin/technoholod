@@ -14,7 +14,7 @@
     .stock-right-col
       .cf 
         .stock_price.stock_price-show = "#{@stock.price} ₽"
-        a.stock_buy-btn.stock_buy-btn-show href='#' ЗАКАЗАТЬ
+        a.stock_buy-btn.stock_buy-btn-show#inline href='#feedback' ЗАКАЗАТЬ
       hr.stock_hr
       .stock-info_desc
         h3 ОПИСАНИЕ
@@ -24,4 +24,16 @@
           .stock_features
             hr.stock_hr
             h3 ХАРАКТЕРИСТИКИ
-            = raw @stock.features           
+            = raw @stock.features
+
+div style="display:none"
+  #feedback
+    span.feedback_title ОБРАТНАЯ СВЯЗЬ
+    = form_tag("/stocks", method: "post") do
+      <br><br>
+      p = @stock.title
+      = hidden_field nil, :stock_id, value: @stock.id
+      = text_field_tag(:name, nil, placeholder: 'ФИО', class: 'form-input')
+      = text_field_tag(:phone, nil, placeholder: 'Ваш телефон', class: 'form-input')
+      = submit_tag("ОТПРАВИТЬ ЗАЯВКУ", class: 'form-submit')
+      
