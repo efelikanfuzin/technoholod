@@ -23,19 +23,20 @@
       .pros_text  Широкий ассортимент
     
 .content
-  .stock.cf
-    .stock--sale
-      span.stock_item_sale Распродажа товара
-    - if @stocks  
-      - for stock in @stocks
-        .stock_item
-          span.stock_item_price = "#{stock.sale_price} ₽"
-          span.stock_item_old-price = "#{stock.price} ₽"
-          = image_tag(stock.preview.thumb)
-          .stock_field
-            = link_to('ПОДРОБНЕЕ', stock, class: 'stock_item_more')
-          p.stock_item_title =stock.title
-          p.stock_item_desc =stock.description
+  - if @stocks
+    .stock.cf
+      .stock--sale
+        span.stock_item_sale Распродажа товара
+      - if @stocks  
+        - for stock in @stocks
+          .stock_item
+            span.stock_item_price = "#{stock.sale_price} ₽"
+            span.stock_item_old-price = "#{stock.price} ₽"
+            = image_tag(stock.preview.thumb)
+            .stock_field
+              = link_to('ПОДРОБНЕЕ', stock, class: 'stock_item_more')
+            p.stock_item_title = stock.title
+            p.stock_item_desc = stock.description
     
   .about
     h1.about_title ООО «ТехноХолод» - надежный поставщик оборудования в Брянске  
