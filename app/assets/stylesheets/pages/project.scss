@@ -34,7 +34,7 @@
 
 .project-container{
   margin-bottom:30px;
-  
+
 }
 .project-img{
   width: 265px;
@@ -54,6 +54,19 @@
 }
 .project-gall{
   position:relative;
+  .swiper-container{
+    height: 250px;
+  }
+  .swiper-slide{
+    a{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
 .project-gall-container{
   position: static;
@@ -62,12 +75,12 @@
   //position:static;
 }
 .project-gall-prev{
-  top:111px;
+  margin-top: -14px;
   left: -30px;
   background: url(asset-path('prev.png')) center center no-repeat;
 }
 .project-gall-next{
-  top:111px;
+  margin-top: -14px;
   right: -30px;
   background: url(asset-path('next.png')) center center no-repeat;
 }

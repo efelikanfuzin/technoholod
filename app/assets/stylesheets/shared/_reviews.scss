@@ -16,6 +16,7 @@
     top: 50%;
     width: 43px;
     height: 43px;
+    margin-top: -21px;
     z-index: 10;
     cursor: pointer;
     background-size: cover;
@@ -62,6 +63,7 @@
 
   &_text {
       float: left;
+      height: 150px;
       width: 650px;
       margin-top: 40px;
       margin-left: 50px;

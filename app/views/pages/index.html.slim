@@ -1,5 +1,5 @@
 .content
-  .swiper-container
+  .swiper-container data-main-gal=''
     .swiper-wrapper
       .swiper-slide.banner._1
       .swiper-slide.banner._2
@@ -21,47 +21,47 @@
     .pros_item
       = image_tag('4.png')
       .pros_text  Широкий ассортимент
-    
+
 .content
   - if @stocks
     .stock.cf
       .stock--sale
         span.stock_item_sale Распродажа товара
-      - if @stocks  
+      - if @stocks
         - for stock in @stocks
           .stock_item
             span.stock_item_price = "#{stock.sale_price} ₽"
             span.stock_item_old-price = "#{stock.price} ₽"
-            = image_tag(stock.preview.thumb)
+            .stock_item-img style=("background-image: url(#{stock.preview.thumb})")
+            / = image_tag(stock.preview.thumb)
             .stock_field
               = link_to('ПОДРОБНЕЕ', stock, class: 'stock_item_more')
             p.stock_item_title = stock.title
-            p.stock_item_desc = stock.description
-    
+
   .about
-    h1.about_title ООО «ТехноХолод» - надежный поставщик оборудования в Брянске  
+    h1.about_title ООО «ТехноХолод» - надежный поставщик оборудования в Брянске
 
     p.about_text Компания «Технохолод» предлагает комплексное решение по оснащению профессиональным оборудованием Вашего магазина, ресторана, кафе, бара, столовой, пиццерии.
 
-    p.about_text  
-      strong Мы предлагаем   широкий ассортимент профессионального оборудования 
-      | (отечественного и импортного производства), который позволит удовлетворить Ваши потребности для   оснащения объектов  различного формата, типа  и уровня обслуживания, ориентированных на покупателей с различным достатком и социальными запросами. 
+    p.about_text
+      strong Мы предлагаем   широкий ассортимент профессионального оборудования
+      | (отечественного и импортного производства), который позволит удовлетворить Ваши потребности для   оснащения объектов  различного формата, типа  и уровня обслуживания, ориентированных на покупателей с различным достатком и социальными запросами.
 
-    p.about_text 
+    p.about_text
       strong У нас работают высококвалифицированные специалисты,
       | всегда готовые по Вашему техническому заданию разработать оптимальное проектное решение (дизайн-проект) и произвести подбор профессионального оборудования высокого качества по доступным ценам.
-    
-    p.about_text 
-      strong Индивидуальный подход 
+
+    p.about_text
+      strong Индивидуальный подход
       | к вам и вашему объекту, позволит учесть все особенности  на этапе строительства и дальнейшей эксплуатации магазина, ресторана, кафе, столовой.
-    
-    p.about_text 
-      strong Эксклюзивные условия  сотрудничества с поставщиками, 
+
+    p.about_text
+      strong Эксклюзивные условия  сотрудничества с поставщиками,
       | позволяют в кратчайшие сроки выполнить договорённости о  поставке профессионального оборудования.
-    
-    p.about_text 
+
+    p.about_text
       strong Сервисная служба произведет монтаж, обслуживание и ремонт оборудования.
-    
+
   .feedback
     span.feedback_title ОБРАТНАЯ СВЯЗЬ
     = form_tag("/feedback", method: "post") do
@@ -69,9 +69,9 @@
       = text_field_tag(:phone, nil, placeholder: 'Ваш телефон', class: 'form-input')
       = text_area_tag(:message, nil, placeholder: 'Ваше сообщение', class: 'form-area')
       = submit_tag("ОТПРАВИТЬ ЗАЯВКУ", class: 'form-submit')
-      
+
   = render 'shared/reviews'
-  
+
   .provider
     = image_tag("provider_1.png", class: 'provider_img')
     = image_tag("provider_2.png", class: 'provider_img')
@@ -81,10 +81,10 @@
 
   a id="href4" target="_blank" href="http://11029007.informerra.ru" style= "display: none"
     img class="anchorImage" alt="технохолод, ооо, торговая компания" src="http://www.informerra.ru/img/i.png"
-    
 
 
 
-      
-  
-    
+
+
+
+

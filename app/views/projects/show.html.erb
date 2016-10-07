@@ -19,8 +19,9 @@
         <div class="swiper-wrapper project-gall-wrapper">
           <%- for image in @photos %>
             <div class="swiper-slide">
-              <a class="fancybox" href= <%= image.url %> >
-                <%= image_tag image.thumb, width: "100%" %>
+              <a class="fancybox" style="background-image: url('<%= image.url %>');" >
+
+
               </a>
             </div>
           <% end %>

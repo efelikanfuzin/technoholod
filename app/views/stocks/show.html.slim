@@ -12,15 +12,15 @@
       a.fancybox href="#{@stock.preview.url}"
         = image_tag(@stock.preview.thumb, class: 'stock_img_big stock_img')
     .stock-right-col
-      .cf 
-        .stock_price.stock_price-show = "#{@stock.price} ₽"
+      .cf
+        .stock_price.stock_price-show = "#{@stock.sale_price} ₽"
         a.stock_buy-btn.stock_buy-btn-show#inline href='#feedback' ЗАКАЗАТЬ
       hr.stock_hr
       .stock-info_desc
         h3 ОПИСАНИЕ
         .stock_desc
           = raw @stock.description
-        - if @stock.features  
+        - if @stock.features
           .stock_features
             hr.stock_hr
             h3 ХАРАКТЕРИСТИКИ
@@ -36,4 +36,4 @@ div style="display:none"
       = text_field_tag(:name, nil, placeholder: 'ФИО', class: 'form-input')
       = text_field_tag(:phone, nil, placeholder: 'Ваш телефон', class: 'form-input')
       = submit_tag("ОТПРАВИТЬ ЗАЯВКУ", class: 'form-submit')
-      
+

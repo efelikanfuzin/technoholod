@@ -5,7 +5,16 @@ $(document).ready(function() {
     showCloseButton: true
 	});
 
-  Swiper('.swiper-container', {
+  Swiper($('[data-main-gal]'), {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.reviews_next',
+    prevButton: '.reviews_prev',
+    autoplay: 2500,
+    loop: true,
+  });
+
+  Swiper($('[data-reviews-gal]'), {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     nextButton: '.reviews_next',
