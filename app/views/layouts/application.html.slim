@@ -1,18 +1,16 @@
 doctype html
 html
   head
-    title = @title
+    = display_meta_tags site: 'Технохолод'
     link rel="shortcut icon" href="favicon.ico" type="image/x-icon"
-    meta name="description" content= @description
-    meta name="keywords" content= @keywords
     meta name='yandex-verification' content='45fc8752fb676d61'
     = stylesheet_link_tag    "application", media: 'all'
     = javascript_include_tag "application"
     = csrf_meta_tags
   body
-    
+
     = render 'shared/header'
     = yield
     = render 'shared/footer'
     = render 'shared/metrica'
-    
+

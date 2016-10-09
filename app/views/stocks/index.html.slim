@@ -3,20 +3,19 @@
     a href="/" Главная
     span.arrow >
     span.last Распродажа
-    
+
   h1 Каталог
   .stock.cf
     - for stock in @stocks
       .stock_item
         span.stock_item_price = "#{stock.sale_price} ₽"
         span.stock_item_old-price = "#{stock.price} ₽"
-        = image_tag(stock.preview.thumb)
+        .stock_item-img style=("background-image: url(#{stock.preview.thumb})")
         .stock_field
             = link_to('ПОДРОБНЕЕ', stock, class: 'stock_item_more')
         p.stock_item_title = stock.title
-        p.stock_item_desc  = stock.description
-  
 
-      
-  
-    
+
+
+
+

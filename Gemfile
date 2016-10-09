@@ -9,19 +9,19 @@ gem 'sassc-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
-# gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'sprockets-rails', '2.3.3'
 
-gem "administrate", github: "thoughtbot/administrate"
-gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
+gem 'administrate', github: 'thoughtbot/administrate'
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'mini_magick'
 gem 'slim-rails'
 gem 'devise'
 gem 'friendly_id'
 gem 'babosa'
+gem 'meta-tags'
 
 group :assets do
   gem 'turbo-sprockets-rails3'
