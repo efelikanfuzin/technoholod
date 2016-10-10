@@ -12,7 +12,7 @@
   <div class="project-container cf">
     <%= raw @project.content %>
   </div>
-  <%- if @photos %>
+  <%- unless @photos.empty? %>
     <div class="project-gall">
       <h2>Фотографии проекта</h2>
 
