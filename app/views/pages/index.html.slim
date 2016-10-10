@@ -23,7 +23,7 @@
       .pros_text  Широкий ассортимент
 
 .content
-  - if @stocks
+  - unless @stocks.empty?
     .stock.cf
       .stock--sale
         span.stock_item_sale Распродажа товара
@@ -71,12 +71,12 @@
 
   = render 'shared/reviews'
 
-  .provider
-    = image_tag("provider_1.png", class: 'provider_img')
-    = image_tag("provider_2.png", class: 'provider_img')
-    = image_tag("provider_3.png", class: 'provider_img')
-    = image_tag("provider_2.png", class: 'provider_img')
-    = image_tag("provider_1.png", class: 'provider_img')
+  / .provider
+  /   = image_tag("provider_1.png", class: 'provider_img')
+  /   = image_tag("provider_2.png", class: 'provider_img')
+  /   = image_tag("provider_3.png", class: 'provider_img')
+  /   = image_tag("provider_2.png", class: 'provider_img')
+  /   = image_tag("provider_1.png", class: 'provider_img')
 
   a id="href4" target="_blank" href="http://11029007.informerra.ru" style= "display: none"
     img class="anchorImage" alt="технохолод, ооо, торговая компания" src="http://www.informerra.ru/img/i.png"

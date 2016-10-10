@@ -15,13 +15,12 @@
   <%- if @photos %>
     <div class="project-gall">
       <h2>Фотографии проекта</h2>
+
       <div class="swiper-container project-gall-container" data-prodject-gal>
         <div class="swiper-wrapper project-gall-wrapper">
           <%- for image in @photos %>
             <div class="swiper-slide">
-              <a class="fancybox" style="background-image: url('<%= image.url %>');" >
-
-
+              <a class="fancybox" href="<%= image.url %>" style="background-image: url('<%= image.thumb %>');">
               </a>
             </div>
           <% end %>

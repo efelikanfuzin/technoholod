@@ -22,6 +22,7 @@ gem 'devise'
 gem 'friendly_id'
 gem 'babosa'
 gem 'meta-tags'
+gem 'kaminari'
 
 group :assets do
   gem 'turbo-sprockets-rails3'

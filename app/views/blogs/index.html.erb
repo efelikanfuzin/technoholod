@@ -10,15 +10,18 @@
 
     <%- for post in @blog_posts %>
       <div class="blog-item">
-        <div class="blog-img">
-          <%= image_tag post.preview_img.thumb %>
-         </div>
-         <div class="blog-item_content">
-            <h3 class="blog-item_title"><%= post.title %></h3>
-            <p><%= post.preview %></p>
-            <%= link_to 'Читать далее >', post, class: 'blog-item_more' %>
-         </div>
+        <%- unless post.preview_img.thumb.blank? %>
+          <div class="blog-img">
+            <%= image_tag post.preview_img.thumb %>
+           </div>
+        <% end %>
+        <div class="blog-item_content">
+          <h3 class="blog-item_title"><%= post.title %></h3>
+          <p><%= post.preview %></p>
+          <%= link_to 'Читать далее >', post, class: 'blog-item_more' %>
+        </div>
       </div>
     <% end %>
+    <%= paginate @blog_posts %>
   </div>
 </div>
