@@ -8,22 +8,22 @@
     = render 'shared/product_menu', products: @product
   .right-side.cf
     h1 ПРОДУКЦИЯ
-    .product_title ОБОРУДОВАНИЕ ДЛЯ МАГАЗИНА
+    .product_title ОБОРУДОВАНИЕ ДЛЯ ОБЩЕПИТА
     - for product in @product.public_catering
       = link_to(product, class: 'product_item')
         = image_tag(product.avatar, width: 250)
         .product_item_name = product.title
-        
-    .product_title ОБОРУДОВАНИЕ ДЛЯ МАГАЗИНА
+
+    .product_title МЕБЕЛЬ, ПОСУДА, СЕРВИРОВКА
     - for product in @product.furniture
       = link_to(product, class: 'product_item')
         = image_tag(product.avatar, width: 250)
         .product_item_name = product.title
-      
+
     .product_title ОБОРУДОВАНИЕ ДЛЯ МАГАЗИНА
     - for product in @product.store_items
       = link_to(product, class: 'product_item')
         = image_tag(product.avatar, width: 250)
         .product_item_name = product.title
 
-    
+
