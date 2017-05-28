@@ -67,6 +67,8 @@
       = text_field_tag(:name, nil, placeholder: 'ФИО', class: 'form-input')
       = text_field_tag(:phone, nil, placeholder: 'Ваш телефон', class: 'form-input')
       = text_area_tag(:message, nil, placeholder: 'Ваше сообщение', class: 'form-area')
+      = recaptcha_tags
+
       = submit_tag("ОТПРАВИТЬ ЗАЯВКУ", class: 'form-submit')
 
   = render 'shared/reviews'

@@ -24,6 +24,8 @@ gem 'babosa'
 gem 'meta-tags'
 gem 'kaminari'
 
+gem 'recaptcha', require: 'recaptcha/rails'
+
 group :assets do
   gem 'turbo-sprockets-rails3'
   gem 'fancybox-rails'

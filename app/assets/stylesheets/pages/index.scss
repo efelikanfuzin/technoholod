@@ -6,14 +6,14 @@
   height: 300px;
   width: 100%;
   min-width: 1200px;
-  background: url(asset-path('slide_1.png')) center center no-repeat;
+  // background: url(asset-path('slide_1.png')) center center no-repeat;
   background-size: cover;
   &._1{
-    background: url(asset-path('slide_1.png')) center center no-repeat;
+    background: url(asset-path('slide_1.jpeg')) center center no-repeat;
     background-size: cover;
   }
   &._2{
-    background: url(asset-path('slide_2.png')) center center no-repeat;
+    background: url(asset-path('slide_2.jpeg')) center center no-repeat;
     background-size: cover;
   }
 }
@@ -40,10 +40,10 @@
 }
 
 .feedback {
-  width: 290px;
+  width: 324px;
   float: left;
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 20px;
   border: 3px solid #0093e0;
   text-align: center;
   padding: 20px 0;

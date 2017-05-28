@@ -10,7 +10,10 @@ class PagesController < ApplicationController
   end
 
   def feedback
-    UserMailer.feedback(feedback_params).deliver_later
+    if verify_recaptcha
+      UserMailer.feedback(feedback_params).deliver_later
+    end
+
     redirect_to root_path
   end
 
