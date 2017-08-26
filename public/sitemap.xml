@@ -2,18 +2,208 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-	<loc>http://www.tehnoholod.ru/</loc>
-	<lastmod>2016-02-27T19:31:34+01:00</lastmod>
+	<loc>http://tehnoholod.ru/</loc>
+	<lastmod>2017-08-27T01:55:23+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://www.tehnoholod.ru/stocks</loc>
-	<lastmod>2016-02-27T19:31:35+01:00</lastmod>
+	<loc>http://tehnoholod.ru/products</loc>
+	<lastmod>2017-08-27T01:55:24+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>http://www.tehnoholod.ru/stocks/1</loc>
-	<lastmod>2016-02-27T19:31:36+01:00</lastmod>
+	<loc>http://tehnoholod.ru/stocks</loc>
+	<lastmod>2017-08-27T01:55:25+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/projects</loc>
+	<lastmod>2017-08-27T01:55:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/about</loc>
+	<lastmod>2017-08-27T01:55:27+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/blogs</loc>
+	<lastmod>2017-08-27T01:55:27+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/contacts</loc>
+	<lastmod>2017-08-27T01:55:28+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/stocks/17</loc>
+	<lastmod>2017-08-27T01:55:29+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/stocks/18</loc>
+	<lastmod>2017-08-27T01:55:30+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/stocks/13</loc>
+	<lastmod>2017-08-27T01:55:30+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/stocks/14</loc>
+	<lastmod>2017-08-27T01:55:31+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/stocks/19</loc>
+	<lastmod>2017-08-27T01:55:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/stocks/20</loc>
+	<lastmod>2017-08-27T01:55:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/teplovoe</loc>
+	<lastmod>2017-08-27T01:55:33+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/neitralnoe</loc>
+	<lastmod>2017-08-27T01:55:34+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/dlya-razdachi-gotovyh-blud</loc>
+	<lastmod>2017-08-27T01:55:34+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/fast-fud</loc>
+	<lastmod>2017-08-27T01:55:35+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/dlya-bara</loc>
+	<lastmod>2017-08-27T01:55:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/elektromehanicheskoe</loc>
+	<lastmod>2017-08-27T01:55:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/posudomoechnoe-oborudovanie</loc>
+	<lastmod>2017-08-27T01:55:37+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/holodilnoe</loc>
+	<lastmod>2017-08-27T01:55:38+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/cherez-prilavok</loc>
+	<lastmod>2017-08-27T01:55:38+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/samoobsluzhivanie</loc>
+	<lastmod>2017-08-27T01:55:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/skaterti-salfetki-spetsodezhda</loc>
+	<lastmod>2017-08-27T01:55:40+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/kuhonnyi-barnyi-inventar</loc>
+	<lastmod>2017-08-27T01:55:40+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/siropy-koktelnaya-vishnya-ukrasheniya</loc>
+	<lastmod>2017-08-27T01:55:41+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/posuda-stolovye-pribory-steklo</loc>
+	<lastmod>2017-08-27T01:55:42+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/products/mebel</loc>
+	<lastmod>2017-08-27T01:55:42+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/projects/1</loc>
+	<lastmod>2017-08-27T01:55:43+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/projects/2</loc>
+	<lastmod>2017-08-27T01:55:44+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/projects/8</loc>
+	<lastmod>2017-08-27T01:55:44+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/projects/4</loc>
+	<lastmod>2017-08-27T01:55:45+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/projects/5</loc>
+	<lastmod>2017-08-27T01:55:46+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/projects/6</loc>
+	<lastmod>2017-08-27T01:55:46+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/projects/7</loc>
+	<lastmod>2017-08-27T01:55:47+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/projects/10</loc>
+	<lastmod>2017-08-27T01:55:48+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/projects/9</loc>
+	<lastmod>2017-08-27T01:55:48+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/blogs/3</loc>
+	<lastmod>2017-08-27T01:55:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/blogs/2</loc>
+	<lastmod>2017-08-27T01:55:52+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/blogs/4</loc>
+	<lastmod>2017-08-27T01:55:52+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://tehnoholod.ru/blogs/1</loc>
+	<lastmod>2017-08-27T01:55:53+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 </urlset>
