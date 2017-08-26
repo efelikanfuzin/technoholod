@@ -17,6 +17,8 @@ class ProductDashboard < Administrate::BaseDashboard
     products_type: EnumSelectField.with_options(
       choices: Product.products_types.keys
     ),
+    meta_description: Field::String,
+    meta_keywords: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }
@@ -43,7 +45,9 @@ class ProductDashboard < Administrate::BaseDashboard
     :title,
     :description,
     :avatar,
-    :products_type
+    :products_type,
+    :meta_description,
+    :meta_keywords
   ]
 
   # Overwrite this method to customize how products are displayed

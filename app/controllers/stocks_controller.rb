@@ -2,6 +2,7 @@ class StocksController < ApplicationController
   before_action :get_stock, only: :show
 
   def show
+    set_meta_tags @stock.slice(:title, :meta_description, :meta_keywords)
   end
 
   def index

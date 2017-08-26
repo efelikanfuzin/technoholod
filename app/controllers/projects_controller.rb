@@ -5,6 +5,9 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find_by(id: params[:id])
-    @photos = @project.photos
+    if @project
+      @photos = @project.photos
+      set_meta_tags @project.slice(:title, :description, :keywords)
+    end
   end
 end

@@ -17,6 +17,8 @@ class StockDashboard < Administrate::BaseDashboard
     preview: ImageField,
     amount: Field::Number,
     tags: Field::String,
+    meta_description: Field::String,
+    meta_keywords: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }
@@ -49,6 +51,8 @@ class StockDashboard < Administrate::BaseDashboard
     :preview,
     :amount,
     :tags,
+    :meta_description,
+    :meta_keywords
   ]
 
   # Overwrite this method to customize how stocks are displayed

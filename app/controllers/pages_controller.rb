@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  before_action :update_meta_tags
+
   def index
     @stocks = Stock.limit(7)
   end
@@ -25,5 +27,10 @@ class PagesController < ApplicationController
 
   def feedback_params
     params.permit(:name, :phone, :message)
+  end
+
+  def update_meta_tags
+    page = Page.find_by(name: params[:action])
+    set_meta_tags page.slice(:title, :description, :keywords) if page
   end
 end

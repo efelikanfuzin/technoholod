@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160603091612) do
+ActiveRecord::Schema.define(version: 20170826125551) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,10 +67,12 @@ ActiveRecord::Schema.define(version: 20160603091612) do
     t.string   "avatar"
     t.json     "photos"
     t.string   "status"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
     t.integer  "products_type"
     t.string   "slug"
+    t.string   "meta_description", default: ""
+    t.string   "meta_keywords",    default: ""
   end
 
   add_index "products", ["slug"], name: "index_products_on_slug", using: :btree
@@ -92,10 +94,12 @@ ActiveRecord::Schema.define(version: 20160603091612) do
     t.integer  "sale_price"
     t.integer  "amount"
     t.string   "tags"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
     t.string   "preview"
     t.string   "features"
+    t.string   "meta_description", default: ""
+    t.string   "meta_keywords",    default: ""
   end
 
   create_table "users", force: :cascade do |t|
