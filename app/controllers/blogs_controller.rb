@@ -1,6 +1,9 @@
 class BlogsController < ApplicationController
   def index
     @blog_posts = Blog.page(params[:page]).per(5)
+
+    page = Page.find_by(name: :blogs)
+    set_meta_tags page.slice(:title, :description, :keywords) if page
   end
 
   def show
