@@ -105,7 +105,6 @@
   &_item {
     width: 220px;
     float: left;
-    display: inline-block;
     margin-right: 20px;
     text-align: center;
     margin-bottom: 15px;
@@ -134,3 +133,58 @@
 .pros_img_5 {
   margin-top: 20px;
 }
+
+.g-recaptcha div {
+  width: auto !important;
+  height: auto !important;
+}
+
+@media (max-width: 767px) {
+  .pros {
+    margin: 1rem 0;
+
+    &_item {
+      width: 220px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+      float: none;
+
+      &:first-child, {
+        // margin-left: 0px;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+      }
+
+      &:last-child {
+        // margin-right: 0px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .about {
+    display: block;
+    width: 100%;
+    float: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0;
+
+    &_title {
+      text-align: center;
+    }
+  }
+
+  .feedback {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+
+  }
+}
+

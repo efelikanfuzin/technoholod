@@ -68,3 +68,44 @@
     margin-top: 2px;
   }
 }
+
+@media (max-width: 767px) {
+  .header {
+    &_logo {
+      float: none;
+      width: 100%;
+      margin: .5rem 0;
+    }
+
+    &_item {
+      display: block;
+      float: none;
+      padding: 0;
+      width: 100%;
+      border: none;
+      padding: .2rem;
+    }
+
+    .contacts {
+      display: block;
+      width: 100%;
+      float: none;
+    }
+
+    .contacts_btn {
+      display: block;
+      float: none;
+      margin: .5rem;
+      background-color: #c10302;
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.6s;
+      text-align: center;
+    }
+  }
+}

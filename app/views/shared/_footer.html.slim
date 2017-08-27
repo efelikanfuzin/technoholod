@@ -1,8 +1,8 @@
 .wrapper_footer.
   .content.
     nav.footer.cf
-      div.footer_copy 2016 © Технохолод
-      a.footer_item href="/products" Продукция  
+      div.footer_copy #{Time.now.year} © Технохолод
+      a.footer_item href="/products" Продукция
       a.footer_item href="/stocks" Распродажа
       a.footer_item href="/projects" Наши проекты
       a.footer_item href="/about" О компании
@@ -20,4 +20,4 @@ div style="display:none"
       = text_field_tag(:phone, nil, placeholder: 'Ваш телефон', class: 'form-input')
       = text_area_tag(:message, nil, placeholder: 'Ваше сообщение', class: 'form-area')
       = submit_tag("ОТПРАВИТЬ ЗАЯВКУ", class: 'form-submit')
-        
+

@@ -37,3 +37,19 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .footer {
+    .contacts {
+      float: none;
+      margin: 0;
+    }
+
+    .contacts_btn {
+      display: block;
+      float: none;
+      margin: 1rem;
+
+    }
+  }
+}
