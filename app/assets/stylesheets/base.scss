@@ -49,9 +49,27 @@ h1 {
 @media (max-width: 767px) {
   .content {
     width: 100%;
+
+    & h1 {
+      text-align: center;
+    }
   }
 
   .mobile_hide {
     display: none;
+  }
+
+  .left-side {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 0;
+
+    & h1 {
+      text-align: center;
+    }
   }
 }

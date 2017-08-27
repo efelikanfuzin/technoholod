@@ -258,5 +258,39 @@
       float: none;
       margin: 0 0 1rem 0;
     }
+
+    &-left-col {
+      width: 100%;
+    }
+
+    &-right-col {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    &_img_big {
+      margin: 0;
+      width: 100%;
+      display: block;
+    }
+
+    &_price-show {
+      width: 50%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    &_buy-btn-show {
+      display: block;
+      margin: 0;
+      width: 50%;
+      box-sizing: border-box;
+      padding: 15px 15px;
+      border-radius: 0;
+    }
+
+    &-info_desc {
+      padding: 0 .5rem;
+    }
   }
 }

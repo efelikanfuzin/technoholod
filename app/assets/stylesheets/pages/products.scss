@@ -57,12 +57,26 @@
 
     &:hover {
       color: #fff;
-      //border: 1px solid #105478;
       text-decoration: underline;
     }
 
     &:hover > &_name {
       background-color: #105478;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .product {
+    &_item {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+
+      &:nth-child(3n - 1) {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+      }
     }
   }
 }

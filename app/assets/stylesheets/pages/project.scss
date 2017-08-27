@@ -99,3 +99,18 @@
     background-size: contain;
   }
 }
+
+@media (max-width: 767px) {
+  .project{
+    &-item_preview {
+      float: none;
+      margin: 0 auto;
+      display: block;
+    }
+
+    &-item_title {
+      text-align: center;
+      margin: .5rem 0;
+    }
+  }
+}

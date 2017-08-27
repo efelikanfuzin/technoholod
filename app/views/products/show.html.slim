@@ -1,11 +1,11 @@
 .content.cf
   .breadcrumbs
-    a href="/" Главная
+    = link_to 'Главная', root_path
     span.arrow >
-    span.last Продукция
+    = link_to 'Продукция', products_path
     span.arrow >
     span.last = @product.title
-  
+
   .left-side
     = render 'shared/product_menu', products: @products
   .right-side.cf

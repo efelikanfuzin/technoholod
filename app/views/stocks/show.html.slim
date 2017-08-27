@@ -15,14 +15,14 @@
       .cf
         .stock_price.stock_price-show = "#{@stock.sale_price} ₽"
         a.stock_buy-btn.stock_buy-btn-show#inline href='#feedback' ЗАКАЗАТЬ
-      hr.stock_hr
+      hr.stock_hr.mobile_hide
       .stock-info_desc
         h3 ОПИСАНИЕ
         .stock_desc
           = raw @stock.description
-        - if @stock.features
+        - unless @stock.features.blank?
           .stock_features
-            hr.stock_hr
+            hr.stock_hr.mobile_hide
             h3 ХАРАКТЕРИСТИКИ
             = raw @stock.features
 
