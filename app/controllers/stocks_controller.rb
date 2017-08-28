@@ -1,5 +1,5 @@
 class StocksController < ApplicationController
-  before_action :get_stock, only: :show
+  before_action :set_stock, only: :show
 
   def show
     set_meta_tags @stock.slice(:title, :meta_description, :meta_keywords)
@@ -19,8 +19,8 @@ class StocksController < ApplicationController
 
   private
 
-  def get_stock
-    @stock = Stock.find_by(id: params[:id]) or not_found
+  def set_stock
+    @stock = Stock.friendly.find(params[:id]) or not_found
   end
 
   def stock_params

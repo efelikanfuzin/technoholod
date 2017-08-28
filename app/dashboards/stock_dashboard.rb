@@ -13,12 +13,13 @@ class StockDashboard < Administrate::BaseDashboard
     description: Field::Text,
     features: HtmlField,
     price: Field::Number.with_options(multiplier: 0.01, decimals: 2, prefix: '₽ '),
-    sale_price: Field::Number.with_options( multiplier: 0.01, decimals: 2, prefix: '₽ '),
+    sale_price: Field::Number.with_options(multiplier: 0.01, decimals: 2, prefix: '₽ '),
     preview: ImageField,
     amount: Field::Number,
     tags: Field::String,
     meta_description: Field::String,
     meta_keywords: Field::String,
+    slug: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }
@@ -52,7 +53,8 @@ class StockDashboard < Administrate::BaseDashboard
     :amount,
     :tags,
     :meta_description,
-    :meta_keywords
+    :meta_keywords,
+    :slug
   ]
 
   # Overwrite this method to customize how stocks are displayed
