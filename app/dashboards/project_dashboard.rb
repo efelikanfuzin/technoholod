@@ -14,6 +14,7 @@ class ProjectDashboard < Administrate::BaseDashboard
     preview: HtmlField,
     preview_img: ImageField,
     photos: MultipleImagesField,
+    slug: Field::String,
     keywords: Field::String,
     description: Field::String,
   }
@@ -41,6 +42,7 @@ class ProjectDashboard < Administrate::BaseDashboard
     :preview,
     :preview_img,
     :photos,
+    :slug,
     :keywords,
     :description,
   ]
