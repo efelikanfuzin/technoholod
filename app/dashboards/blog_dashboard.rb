@@ -15,6 +15,7 @@ class BlogDashboard < Administrate::BaseDashboard
     preview_img: ImageField,
     keywords: Field::String,
     description: Field::String,
+    slug: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }
@@ -43,6 +44,7 @@ class BlogDashboard < Administrate::BaseDashboard
     :content,
     :keywords,
     :description,
+    :slug
   ]
 
   # Overwrite this method to customize how blogs are displayed
