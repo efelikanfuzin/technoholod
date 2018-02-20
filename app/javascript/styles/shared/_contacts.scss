@@ -1,0 +1,55 @@
+.contacts {
+  display: inline-block;
+  margin-right: 7px;
+  float: left;
+
+  &_phone {
+    color: #014d89;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &_adress {
+    color: #014d89;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+
+  &_btn {
+    display: inline-block;
+    background-color: #c10302;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.6s;
+    float: left;
+
+    &:hover {
+      background-color: #9A0306;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    .contacts {
+      float: none;
+      margin: 0;
+    }
+
+    .contacts_btn {
+      display: block;
+      float: none;
+      margin: 1rem;
+
+    }
+  }
+}

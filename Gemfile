@@ -22,6 +22,7 @@ gem 'meta-tags'
 gem 'kaminari'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'recaptcha', require: 'recaptcha/rails'
+gem 'webpacker', '~> 3.2'
 
 group :assets do
   gem 'turbo-sprockets-rails3'
