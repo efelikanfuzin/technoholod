@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 gem 'bundler', '>= 1.8.4'
 
-gem 'rails', '4.2.4'
+gem 'rails', '~> 5.0.6'
 gem 'pg', '~> 0.18'
 gem 'puma'
 gem 'sassc-rails'
