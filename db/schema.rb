@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -39,10 +38,9 @@ ActiveRecord::Schema.define(version: 20170903180408) do
     t.integer  "height"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
+    t.index ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
   end
-
-  add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
-  add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
 
   create_table "films", force: :cascade do |t|
     t.string   "name"
@@ -74,9 +72,8 @@ ActiveRecord::Schema.define(version: 20170903180408) do
     t.string   "slug"
     t.string   "meta_description", default: ""
     t.string   "meta_keywords",    default: ""
+    t.index ["slug"], name: "index_products_on_slug", using: :btree
   end
-
-  add_index "products", ["slug"], name: "index_products_on_slug", using: :btree
 
   create_table "projects", force: :cascade do |t|
     t.string "title"
@@ -118,9 +115,8 @@ ActiveRecord::Schema.define(version: 20170903180408) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end
