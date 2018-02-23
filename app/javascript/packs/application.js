@@ -10,7 +10,7 @@ new Swiper('[data-main-gal]', {
     loop: true
 });
 
-new Swiper(document.querySelector('[data-reviews-gal]'), {
+new Swiper('[data-reviews-gal]', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     nextButton: '.reviews_next',
@@ -18,7 +18,7 @@ new Swiper(document.querySelector('[data-reviews-gal]'), {
     loop: true,
 });
 
-new Swiper(document.querySelector('[data-prodject-gal]'), {
+new Swiper('[data-prodject-gal]', {
     paginationClickable: true,
     loop: true,
     slidesPerView: 4,
