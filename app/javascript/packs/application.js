@@ -1,4 +1,5 @@
 import '../styles/application.scss';
+require.context('../images', true);
 import Swiper from 'swiper'
 
 new Swiper('[data-main-gal]', {

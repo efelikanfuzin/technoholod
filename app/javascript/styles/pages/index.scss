@@ -149,13 +149,11 @@
       float: none;
 
       &:first-child, {
-        // margin-left: 0px;
         margin: 0 auto;
         margin-bottom: 1.5rem;
       }
 
       &:last-child {
-        // margin-right: 0px;
         margin: 0 auto;
       }
     }

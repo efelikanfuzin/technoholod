@@ -8,7 +8,6 @@
 .wrapper_footer {
   background: #fff;
   box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.15);
-  // border-top: 1px solid #ccc;
 }
 
 .header {
@@ -18,7 +17,7 @@
     width: 131px;
     height: 56px;
     margin-top: 8px;
-    background: url(asset-path('logo.png')) no-repeat center;
+    background: url('../images/logo.png') no-repeat center;
     vertical-align: middle;
   }
   &_item {

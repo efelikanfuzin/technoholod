@@ -23,12 +23,12 @@
   }
 
   &_prev {
-    background-image: url(asset-path('prev_btn.png'));
+    background-image: url('../images/prev_btn.png');
     left: 50px;
     right: auto;
   }
   &_next {
-    background-image: url(asset-path('next_btn.png'));
+    background-image: url('../images/next_btn.png');
     right: 50px;
     left: auto;
   }
@@ -135,8 +135,8 @@
 }
 
 .review_1 {
-  background: url(asset-path('review_1.png'));
+  background: url('../images/review_1.png');
 }
 .review_2 {
-  background: url(asset-path('review_2.png'));
+  background: url('../images/review_2.png');
 }

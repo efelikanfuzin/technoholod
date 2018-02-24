@@ -25,33 +25,26 @@
       transition: all 0.4s;
     }
     &:hover{
-      // a{
-      //   color: #105478;
-      // }
       &::before {
         content: '';
         width: 5px;
         height: 9px;
-        background: url(asset-path('sub_arrow.png')) center no-repeat;
+        background: url('../images/sub_arrow.png') center no-repeat;
         background-size: cover;
         display: inline-block;
         margin-bottom: 1px;
         position: absolute;
         left: 5px;
         top: 8px;
-           //margin-left: 20px;
       }
     }
   } 
-
-
-
 
   &_title::before {
     content: '';
     width: 8px;
     height: 11px;
-    background: url(asset-path('title_arrow.png')) center no-repeat;
+    background: url('../images/title_arrow.png') center no-repeat;
     background-size: cover;
     display: inline-block;
     margin-right: 5px;
