@@ -1,6 +1,10 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+# require 'rails/all'
+require "active_record/railtie"
+require "action_controller/railtie"
+require "action_mailer/railtie"
+require "rails/test_unit/railtie"
 require 'carrierwave'
 require 'carrierwave/orm/activerecord'
 
@@ -24,5 +28,6 @@ module Cinemafull
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.assets.enabled = false
   end
 end
