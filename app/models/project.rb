@@ -1,6 +1,6 @@
-class Project < ActiveRecord::Base
+class Project < ApplicationRecord
   extend FriendlyId
-  
+
   friendly_id :title, use: [:slugged]
   mount_uploader :preview_img, PreviewUploader
   mount_uploaders :photos, PreviewUploader

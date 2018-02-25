@@ -7,10 +7,11 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @project = Project.friendly.find(params[:id]) or not_found
-    if @project
-      @photos = @project.photos
-      set_meta_tags @project.slice(:title, :description, :keywords)
-    end
+    (@project = Project.friendly.find(params[:id])) || not_found
+
+    return unless @project
+
+    @photos = @project.photos
+    set_meta_tags @project.slice(:title, :description, :keywords)
   end
 end
