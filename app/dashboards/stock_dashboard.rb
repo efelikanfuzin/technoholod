@@ -1,4 +1,4 @@
-require "administrate/base_dashboard"
+require 'administrate/base_dashboard'
 
 class StockDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
@@ -12,8 +12,12 @@ class StockDashboard < Administrate::BaseDashboard
     title: Field::String,
     description: Field::Text,
     features: HtmlField,
-    price: Field::Number.with_options(multiplier: 0.01, decimals: 2, prefix: '₽ '),
-    sale_price: Field::Number.with_options(multiplier: 0.01, decimals: 2, prefix: '₽ '),
+    price: Field::Number.with_options(
+      multiplier: 0.01, decimals: 2, prefix: '₽ '
+    ),
+    sale_price: Field::Number.with_options(
+      multiplier: 0.01, decimals: 2, prefix: '₽ '
+    ),
     preview: ImageField,
     amount: Field::Number,
     tags: Field::String,
@@ -21,20 +25,20 @@ class StockDashboard < Administrate::BaseDashboard
     meta_keywords: Field::String,
     slug: Field::String,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime,
-  }
+    updated_at: Field::DateTime
+  }.freeze
 
   # COLLECTION_ATTRIBUTES
   # an array of attributes that will be displayed on the model's index page.
   #
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
-  COLLECTION_ATTRIBUTES = [
-    :id,
-    :title,
-    :description,
-    :price,
-  ]
+  COLLECTION_ATTRIBUTES = %i[
+    id
+    title
+    description
+    price
+  ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
@@ -43,19 +47,19 @@ class StockDashboard < Administrate::BaseDashboard
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
-  FORM_ATTRIBUTES = [
-    :title,
-    :description,
-    :features,
-    :price,
-    :sale_price,
-    :preview,
-    :amount,
-    :tags,
-    :meta_description,
-    :meta_keywords,
-    :slug
-  ]
+  FORM_ATTRIBUTES = %i[
+    title
+    description
+    features
+    price
+    sale_price
+    preview
+    amount
+    tags
+    meta_description
+    meta_keywords
+    slug
+  ].freeze
 
   # Overwrite this method to customize how stocks are displayed
   # across all pages of the admin dashboard.

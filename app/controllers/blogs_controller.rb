@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
   end
 
   def show
-    @post = Blog.friendly.find(params[:id]) or not_found
+    (@post = Blog.friendly.find(params[:id])) || not_found
     set_meta_tags @post.slice(:title, :description, :keywords) if @post
   end
 end

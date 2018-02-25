@@ -17,6 +17,6 @@ Rails.application.routes.draw do
   resources :stocks
   resources :projects
   resources :products, only: [:show]
-  resources :blogs, only: [:show, :index]
+  resources :blogs, only: %i[show index]
   devise_for :users
 end

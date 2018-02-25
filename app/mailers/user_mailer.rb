@@ -1,5 +1,4 @@
 class UserMailer < ApplicationMailer
-
   def feedback(params)
     @params = params
     mail(to: 'mobile@tehnoholod.ru',

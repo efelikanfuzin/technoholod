@@ -10,6 +10,6 @@ class MultipleImagesField < Administrate::Field::Base
   end
 
   def to_s
-    data.map{ |p| p.url}
+    data.map(&:url)
   end
 end

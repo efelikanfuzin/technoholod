@@ -5,16 +5,12 @@ class PagesController < ApplicationController
     @stocks = Stock.limit(7)
   end
 
-  def about
-  end
+  def about; end
 
-  def contacts
-  end
+  def contacts; end
 
   def feedback
-    if verify_recaptcha
-      UserMailer.feedback(feedback_params).deliver_later
-    end
+    UserMailer.feedback(feedback_params).deliver_later if verify_recaptcha
 
     redirect_to root_path
   end

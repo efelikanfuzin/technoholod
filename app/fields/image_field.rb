@@ -1,9 +1,7 @@
 # require "administrate/fields/base"
 
 class ImageField < Administrate::Field::Base
-  def url
-    data.url
-  end
+  delegate :url, to: :data
 
   def thumb
     data.url(:thumb)

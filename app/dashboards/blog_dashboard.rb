@@ -1,4 +1,4 @@
-require "administrate/base_dashboard"
+require 'administrate/base_dashboard'
 
 class BlogDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
@@ -17,18 +17,18 @@ class BlogDashboard < Administrate::BaseDashboard
     description: Field::String,
     slug: Field::String,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime,
-  }
+    updated_at: Field::DateTime
+  }.freeze
 
   # COLLECTION_ATTRIBUTES
   # an array of attributes that will be displayed on the model's index page.
   #
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
-  COLLECTION_ATTRIBUTES = [
-    :id,
-    :preview,
-  ]
+  COLLECTION_ATTRIBUTES = %i[
+    id
+    preview
+  ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
@@ -37,15 +37,15 @@ class BlogDashboard < Administrate::BaseDashboard
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
-  FORM_ATTRIBUTES = [
-    :title,
-    :preview,
-    :preview_img,
-    :content,
-    :keywords,
-    :description,
-    :slug
-  ]
+  FORM_ATTRIBUTES = %i[
+    title
+    preview
+    preview_img
+    content
+    keywords
+    description
+    slug
+  ].freeze
 
   # Overwrite this method to customize how blogs are displayed
   # across all pages of the admin dashboard.

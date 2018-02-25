@@ -1,4 +1,4 @@
-require "administrate/base_dashboard"
+require 'administrate/base_dashboard'
 
 class ProjectDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
@@ -16,18 +16,18 @@ class ProjectDashboard < Administrate::BaseDashboard
     photos: MultipleImagesField,
     slug: Field::String,
     keywords: Field::String,
-    description: Field::String,
-  }
+    description: Field::String
+  }.freeze
 
   # COLLECTION_ATTRIBUTES
   # an array of attributes that will be displayed on the model's index page.
   #
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
-  COLLECTION_ATTRIBUTES = [
-    :id,
-    :title,
-  ]
+  COLLECTION_ATTRIBUTES = %i[
+    id
+    title
+  ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
@@ -36,16 +36,16 @@ class ProjectDashboard < Administrate::BaseDashboard
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
-  FORM_ATTRIBUTES = [
-    :title,
-    :content,
-    :preview,
-    :preview_img,
-    :photos,
-    :slug,
-    :keywords,
-    :description,
-  ]
+  FORM_ATTRIBUTES = %i[
+    title
+    content
+    preview
+    preview_img
+    photos
+    slug
+    keywords
+    description
+  ].freeze
 
   # Overwrite this method to customize how stocks are displayed
   # across all pages of the admin dashboard.

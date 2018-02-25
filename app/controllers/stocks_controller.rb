@@ -20,7 +20,7 @@ class StocksController < ApplicationController
   private
 
   def set_stock
-    @stock = Stock.friendly.find(params[:id]) or not_found
+    (@stock = Stock.friendly.find(params[:id])) || not_found
   end
 
   def stock_params

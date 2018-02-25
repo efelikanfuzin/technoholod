@@ -5,6 +5,6 @@ class ProductsController < ApplicationController
     set_meta_tags @product.slice(:title, :meta_description, :meta_keywords)
     @products = Product.all
 
-    render status: 404 and return unless @product
+    render(status: 404) && return unless @product
   end
 end

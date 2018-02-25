@@ -1,4 +1,4 @@
-require "administrate/base_dashboard"
+require 'administrate/base_dashboard'
 
 class PageDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
@@ -8,11 +8,11 @@ class PageDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    name: Field::String.with_options(title: "Название"),
+    name: Field::String.with_options(title: 'Название'),
     title: Field::Text,
     description: Field::Text,
-    keywords: Field::Text,
-  }
+    keywords: Field::Text
+  }.freeze
 
   # COLLECTION_ATTRIBUTES
   # an array of attributes that will be displayed on the model's index page.
@@ -24,7 +24,7 @@ class PageDashboard < Administrate::BaseDashboard
     :title,
     # :description,
     # :keywords
-  ]
+  ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
@@ -33,12 +33,12 @@ class PageDashboard < Administrate::BaseDashboard
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
-  FORM_ATTRIBUTES = [
-    :name,
-    :title,
-    :description,
-    :keywords
-  ]
+  FORM_ATTRIBUTES = %i[
+    name
+    title
+    description
+    keywords
+  ].freeze
 
   # Overwrite this method to customize how products are displayed
   # across all pages of the admin dashboard.

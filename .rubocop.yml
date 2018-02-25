@@ -1,0 +1,22 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+    - '**/Gemfile'
+    - '**/Capfile'
+  Exclude:
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'node_modules/**/*'
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 80
+  IgnoredPatterns: ['(\A|\s)#']
