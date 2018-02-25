@@ -12,7 +12,9 @@ development:
 
 test:
   <<: *default
-  database: cinemafull_test
+  database: tehnoholod_db_test 
+  username: tehnoholod
+  password: ""
 
 production:
   <<: *default
