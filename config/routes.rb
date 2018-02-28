@@ -8,6 +8,11 @@ Rails.application.routes.draw do
       root controller: DashboardManifest::ROOT_DASHBOARD, action: :index
     end
   end
+  namespace :v1 do
+    namespace :admin do
+      get '/' => 'dashboards#show'
+    end
+  end
 
   root 'pages#index'
   get   '/about'    => 'pages#about'
