@@ -10,7 +10,7 @@
     h1 = @stock.title
     .stock-left-col
       a.fancybox href="#{@stock.preview.url}"
-        = image_tag(@stock.preview.thumb, class: 'stock_img_big stock_img')
+        = image_tag(@stock.preview.thumb.url, class: 'stock_img_big stock_img')
     .stock-right-col
       .cf
         .stock_price.stock_price-show = "#{@stock.sale_price} ₽"

@@ -12,7 +12,7 @@
       <div class="blog-item">
         <%- unless post.preview_img.thumb.blank? %>
           <div class="blog-img">
-            <%= image_tag post.preview_img.thumb %>
+            <%= image_tag post.preview_img.thumb.url %>
            </div>
         <% end %>
         <div class="blog-item_content">

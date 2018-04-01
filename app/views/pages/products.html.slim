@@ -11,19 +11,19 @@
     .product_title ОБОРУДОВАНИЕ ДЛЯ ОБЩЕПИТА
     - for product in @product.public_catering
       = link_to(product, class: 'product_item')
-        = image_tag(product.avatar, width: 250)
+        = image_tag(product.avatar.url, width: 250)
         .product_item_name = product.title
 
     .product_title МЕБЕЛЬ, ПОСУДА, СЕРВИРОВКА
     - for product in @product.furniture
       = link_to(product, class: 'product_item')
-        = image_tag(product.avatar, width: 250)
+        = image_tag(product.avatar.url, width: 250)
         .product_item_name = product.title
 
     .product_title ОБОРУДОВАНИЕ ДЛЯ МАГАЗИНА
     - for product in @product.store_items
       = link_to(product, class: 'product_item')
-        = image_tag(product.avatar, width: 250)
+        = image_tag(product.avatar.url, width: 250)
         .product_item_name = product.title
 
 

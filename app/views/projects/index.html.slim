@@ -9,6 +9,6 @@
   - for project in @projects
 
     = link_to project, class: 'project-item cf'
-      = image_tag(project.preview_img, width: '200', class: 'project-item_preview')
+      = image_tag(project.preview_img.url, width: '200', class: 'project-item_preview')
       h3.project-item_title = project.title
       project-item_content = raw project.preview
