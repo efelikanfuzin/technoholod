@@ -13,7 +13,7 @@ class StocksController < ApplicationController
   end
 
   def create
-    UserMailer.stock_order(stock_params).deliver_later
+    UserMailer.stock_order(stock_params.to_h).deliver_later
     redirect_to stocks_path
   end
 
