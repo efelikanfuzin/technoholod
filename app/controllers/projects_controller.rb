@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.limit(10).order(id: :desc)
+    @projects = Project.all.order(id: :desc)
 
     page = Page.find_by(name: :projects)
     set_meta_tags page.slice(:title, :description, :keywords) if page
