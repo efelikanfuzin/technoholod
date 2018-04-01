@@ -86,6 +86,8 @@ GEM
     bcrypt (3.1.11)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
+    bootsnap (1.2.1)
+      msgpack (~> 1.0)
     builder (3.2.3)
     byebug (10.0.2)
     capistrano (3.10.1)
@@ -179,6 +181,7 @@ GEM
     minitest (5.11.3)
     momentjs-rails (2.20.1)
       railties (>= 3.1)
+    msgpack (1.2.4)
     multi_json (1.13.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -318,6 +321,7 @@ PLATFORMS
 DEPENDENCIES
   administrate!
   babosa
+  bootsnap
   bundler
   byebug
   capistrano

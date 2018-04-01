@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-gem 'bundler'
-
 gem 'administrate', github: 'thoughtbot/administrate'
 gem 'babosa'
+gem 'bootsnap', require: false
+gem 'bundler'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'coffee-rails'
