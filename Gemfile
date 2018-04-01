@@ -1,28 +1,28 @@
 source 'https://rubygems.org'
-gem 'bundler', '>= 1.8.4'
+gem 'bundler'
 
 gem 'administrate', github: 'thoughtbot/administrate'
 gem 'babosa'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'ckeditor', github: 'galetahub/ckeditor'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 gem 'devise'
 gem 'friendly_id'
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'meta-tags'
 gem 'mini_magick'
 gem 'pg', '~> 0.18'
 gem 'puma'
-gem 'rails', '~> 5.0.6'
+gem 'rails', '5.2.0.rc2'
 gem 'recaptcha', require: 'recaptcha/rails'
 gem 'rubocop', require: false
 gem 'sassc-rails'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', group: :doc
 gem 'slim-rails'
-gem 'sprockets-rails', '2.3.3'
-gem 'uglifier', '>= 1.3.0'
+gem 'sprockets-rails'
+gem 'uglifier'
 
 group :assets do
   gem 'fancybox-rails'
