@@ -17,6 +17,7 @@ gem 'pg', '~> 0.18'
 gem 'puma'
 gem 'rails', '~> 5.0.6'
 gem 'recaptcha', require: 'recaptcha/rails'
+<<<<<<< HEAD
 gem 'rubocop', require: false
 gem 'sassc-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
@@ -24,6 +25,8 @@ gem 'slim-rails'
 gem 'sprockets-rails', '2.3.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker', '~> 3.2'
+=======
+>>>>>>> parent of 503d9ef... Feature/add webpacker (#3)
 
 group :assets do
   gem 'fancybox-rails'

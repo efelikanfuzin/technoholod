@@ -12,9 +12,3 @@
 !/log/.keep
 /tmp
 /public/uploads/*
-/public/packs
-/public/assets
-/public/packs-test
-/node_modules
-yarn-debug.log*
-.yarn-integrity

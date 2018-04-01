@@ -9,7 +9,7 @@
   .stock-wrapper.cf
     h1 = @stock.title
     .stock-left-col
-      a data-fancybox="gallery" href="#{@stock.preview.url}"
+      a.fancybox href="#{@stock.preview.url}"
         = image_tag(@stock.preview.thumb, class: 'stock_img_big stock_img')
     .stock-right-col
       .cf
