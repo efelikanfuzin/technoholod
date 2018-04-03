@@ -49,4 +49,5 @@ Rails.application.configure do
     password: 'iibuododswykattg', # SMTP password is any valid API key
     authentication: 'login', # Mandrill supports 'plain' or 'login'
   }
+  config.active_record.verbose_query_logs = true
 end

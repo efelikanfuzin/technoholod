@@ -5,7 +5,7 @@ $(document).ready(function() {
     showCloseButton: true
 	});
 
-  Swiper($('[data-main-gal]'), {
+  new Swiper('[data-main-gal]', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     nextButton: '.reviews_next',
@@ -14,7 +14,7 @@ $(document).ready(function() {
     loop: true,
   });
 
-  Swiper($('[data-reviews-gal]'), {
+  new Swiper('[data-reviews-gal]', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     nextButton: '.reviews_next',
@@ -22,7 +22,7 @@ $(document).ready(function() {
     loop: true,
   });
 
-  Swiper($('[data-prodject-gal]'), {
+  new Swiper('[data-prodject-gal]', {
     paginationClickable: true,
     loop: true,
 		slidesPerView: 4,
