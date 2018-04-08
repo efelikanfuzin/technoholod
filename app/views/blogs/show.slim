@@ -1,0 +1,12 @@
+.content.cf.main-content
+  .breadcrumbs
+    = link_to 'Главная', root_url
+    span.arrow >
+    = link_to 'Блог', blogs_url
+    span.arrow >
+    span.last = @post.title
+
+  .content_block_text
+    h1 = @post.title
+    .blog-item_big_content 
+      = raw @post.content

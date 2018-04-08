@@ -1,14 +1,26 @@
+@font-face {
+	font-family: "Roboto";
+	src:  font-url("Roboto-Regular.eot?") format("eot"),
+        font-url("Roboto-Regular.ttf") format("truetype"),
+        font-url("Roboto-Regular.svg#Samplino") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
   background-color: #f8f8f8;
 }
+
 p {
   margin: 0;
 }
+
 h1 {
   margin-top: 0;
 }
+
 .content {
   width: 1200px;
   height: 100%;
@@ -28,7 +40,6 @@ h1 {
 
 .left-side,
 .right-side {
-  float: left;
   display: inline-block;
   height: 100%;
   box-sizing: border-box;
@@ -43,6 +54,16 @@ h1 {
 .right-side {
   width: 900px;
   padding: 0 20px;
+}
+
+.text_content {
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
 }
 
 
@@ -71,5 +92,15 @@ h1 {
     & h1 {
       text-align: center;
     }
+  }
+}
+
+.content_block_text {
+  width: 900px;
+  display: block;
+  margin: 0 auto;
+
+  p {
+    margin: 1rem 0;
   }
 }
