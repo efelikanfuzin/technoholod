@@ -12,3 +12,5 @@
       = image_tag(project.preview_img.url, width: '200', class: 'project-item_preview')
       h3.project-item_title = project.title
       project-item_content = raw project.preview
+
+  = paginate @projects
