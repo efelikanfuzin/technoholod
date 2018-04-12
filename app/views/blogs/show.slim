@@ -1,8 +1,8 @@
 .content.cf.main-content
   .breadcrumbs
-    = link_to 'Главная', root_url
+    = link_to 'Главная', root_path
     span.arrow >
-    = link_to 'Блог', blogs_url
+    = link_to 'Блог', blogs_path
     span.arrow >
     span.last = @post.title
 

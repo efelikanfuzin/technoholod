@@ -1,8 +1,8 @@
 .content.main-content
   .breadcrumbs
-    a href="/" Главная
+    = link_to 'Главная', root_path
     span.arrow >
-    a href="/stocks" Распродажа
+    = link_to 'Распродажа', stocks_path
     span.arrow >
     span.last = @stock.title
 

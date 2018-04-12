@@ -43,6 +43,7 @@ h1 {
   display: inline-block;
   height: 100%;
   box-sizing: border-box;
+  vertical-align: top;
 }
 
 .left-side {
@@ -65,7 +66,6 @@ h1 {
   line-height: 1.58;
   letter-spacing: -.003em;
 }
-
 
 @media (max-width: 767px) {
   .content {
