@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+
+ruby "2.5.1"
+
 gem 'administrate', github: 'thoughtbot/administrate'
 gem 'babosa'
 gem 'bootsnap', require: false

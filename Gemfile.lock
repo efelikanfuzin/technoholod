@@ -86,7 +86,7 @@ GEM
     bcrypt (3.1.11)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
-    bootsnap (1.2.1)
+    bootsnap (1.3.0)
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (10.0.2)
@@ -120,7 +120,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
-    crass (1.0.3)
+    crass (1.0.4)
     datetime_picker_rails (0.0.7)
       momentjs-rails (>= 2.8.1)
     debug_inspector (0.0.3)
@@ -191,14 +191,14 @@ GEM
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
     parallel (1.12.1)
-    parser (2.5.0.5)
+    parser (2.5.1.0)
       ast (~> 2.4.0)
     pg (0.21.0)
     powerpack (0.1.1)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    puma (3.11.3)
+    puma (3.11.4)
     rack (2.0.4)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
@@ -215,7 +215,7 @@ GEM
       bundler (>= 1.3.0)
       railties (= 5.2.0.rc2)
       sprockets-rails (>= 2.0.0)
-    rails-assets-swiper (4.2.0)
+    rails-assets-swiper (4.2.2)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -233,7 +233,7 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (6.0.3)
-    recaptcha (4.7.0)
+    recaptcha (4.8.0)
       json
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
@@ -301,7 +301,7 @@ GEM
       sprockets (>= 2.0.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.8)
+    uglifier (4.1.9)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.3.0)
     warden (1.2.7)
@@ -356,6 +356,9 @@ DEPENDENCIES
   turbo-sprockets-rails3
   uglifier
   web-console (~> 2.0)
+
+RUBY VERSION
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.1
