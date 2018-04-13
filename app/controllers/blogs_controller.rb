@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BlogsController < ApplicationController
   def index
     @blog_posts = Blog.page(params[:page]).order(id: :desc).per(5)

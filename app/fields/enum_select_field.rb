@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # require "administrate/fields/base"
 
 class EnumSelectField < Administrate::Field::Base

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ProductsController < ApplicationController
   def show
     # slug = params[:id].to_slug.normalize(transliterations: :russian).to_s

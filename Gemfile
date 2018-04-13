@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-ruby "2.5.1"
+ruby '2.5.1'
 
 gem 'administrate', github: 'thoughtbot/administrate'
 gem 'babosa'

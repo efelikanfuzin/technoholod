@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Ckeditor
   class AttachmentFile < Ckeditor::Asset
     mount_uploader :data, CkeditorAttachmentFileUploader,

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ProjectsController < ApplicationController
   def index
     @projects = Project.page(params[:page]).order(id: :desc).per(10)

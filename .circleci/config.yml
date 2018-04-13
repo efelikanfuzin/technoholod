@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/ruby:2.4.1-node-browsers
+      - image: circleci/ruby:2.5.1-node-browsers
         environment:
           PGHOST: localhost
           PGUSER: tehnoholod
@@ -51,8 +51,3 @@ jobs:
           command: |
             bundle exec rails test
             rubocop
-            # bundle exec rspec --format progress \
-            #                 --format RspecJunitFormatter \
-            #                 --out /tmp/test-results/rspec.xml \
-            #                 --format progress \
-            #                 $TEST_FILES

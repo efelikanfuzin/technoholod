@@ -23,6 +23,9 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true # Change to false when not using ActiveRecord
 
+# set :rvm_type, :user
+set :rvm_ruby_version, '2.5.1'
+
 ## Defaults:
 # set :scm,           :git
 # set :branch,        :master
@@ -69,7 +72,7 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      invoke 'puma:restart'
+      invoke! 'puma:restart'
     end
   end
 

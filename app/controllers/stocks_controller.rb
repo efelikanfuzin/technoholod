@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class StocksController < ApplicationController
   before_action :set_stock, only: :show
 
