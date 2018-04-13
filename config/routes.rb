@@ -10,10 +10,10 @@ Rails.application.routes.draw do
   end
 
   root 'pages#index'
-  get   '/about'    => 'pages#about'
-  get   '/contacts' => 'pages#contacts'
-  get   '/products' => 'pages#products'
-  post  '/feedback' => 'pages#feedback'
+  get  '/about'    => 'pages#about'
+  get  '/contacts' => 'pages#contacts'
+  get  '/products' => 'pages#products'
+  post '/feedback' => 'pages#feedback'
   resources :stocks
   resources :projects
   resources :products, only: [:show]
