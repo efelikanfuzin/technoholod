@@ -1,0 +1,79 @@
+ru:
+  helpers:
+    label:
+      blog:
+        id: "Номер"
+        title: "Заголовок"
+        content: "Текст"
+        preview: "Превью"
+        preview_img: "Картинка для превью"
+        keywords: "Ключевые фразы (для СЕО)"
+        description: "Описание страницы (для СЕО)"
+        slug: "Название адресной строки"
+        created_at: "Дата создания"
+        updated_at: "Дата обновления"
+      page:
+        id: "Номер"
+        name: "Название"
+        title: "Заголовок"
+        content: "Текст"
+        preview: "Превью"
+        preview_img: "Картинка для превью"
+        keywords: "Ключевые фразы (для СЕО)"
+        description: "Описание страницы (для СЕО)"
+        slug: "Название адресной строки"
+        created_at: "Дата создания"
+        updated_at: "Дата обновления"
+      stock:
+        id: "Номер"
+        title: "Заголовок"
+        description: "Описание товара"
+        features: "Характеристики"
+        price: "Старая цена"
+        sale_price: "Новая цена"
+        preview: "Картинка для превью"
+        meta_keywords: "Ключевые фразы (для СЕО)"
+        meta_description: "Описание страницы (для СЕО)"
+        slug: "Название адресной строки"
+        created_at: "Дата создания"
+        updated_at: "Дата обновления"
+      product:
+        id: "Номер"
+        title: "Название"
+        description: "Описание продукта"
+        avatar: "Изображение продукта"
+        products_type: "Категория продукта"
+        meta_keywords: "Ключевые фразы (для СЕО)"
+        meta_description: "Описание страницы (для СЕО)"
+        slug: "Название адресной строки"
+        created_at: "Дата создания"
+        updated_at: "Дата обновления"
+      project:
+        id: "Номер"
+        title: "Заголовок"
+        content: "Текст"
+        preview: "Текст превью"
+        preview_img: "Изображение для превью"
+        photos: "Изображения для текста"
+        keywords: "Ключевые фразы (для СЕО)"
+        description: "Описание страницы (для СЕО)"
+        slug: "Название адресной строки"
+        created_at: "Дата создания"
+        updated_at: "Дата обновления"
+  activerecord:
+    models:
+      blog:
+        one: "Блог"
+        other: "Блоги"
+      page:
+        one: "Страница"
+        other: "Страницы"
+      stock:
+        one: "Распродажа"
+        other: "Распродажи"
+      product:
+        one: "Продукт"
+        other: "Продукты"
+      project:
+        one: "Проект"
+        other: "Проекты"

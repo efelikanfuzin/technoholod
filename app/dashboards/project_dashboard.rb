@@ -52,7 +52,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how stocks are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(stock)
-  #   "Stock ##{stock.id}"
-  # end
+  def display_resource(stock)
+    "Проект ##{stock.id}"
+  end
 end

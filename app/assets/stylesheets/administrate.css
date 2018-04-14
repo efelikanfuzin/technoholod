@@ -1,0 +1,12 @@
+.field-unit__label {
+  width: calc(20% - 1rem);
+}
+
+.field-unit__field {
+  width: 70%;
+}
+
+.image-container {
+  display: inline-block;
+  margin-right: 1rem;
+}

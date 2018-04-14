@@ -52,7 +52,7 @@ class BlogDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how blogs are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(blog)
-  #   "Blog ##{blog.id}"
-  # end
+  def display_resource(blog)
+    "Блог ##{blog.id}"
+  end
 end

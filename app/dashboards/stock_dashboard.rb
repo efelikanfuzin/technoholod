@@ -44,7 +44,19 @@ class StockDashboard < Administrate::BaseDashboard
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
-  SHOW_PAGE_ATTRIBUTES = ATTRIBUTE_TYPES.keys
+  SHOW_PAGE_ATTRIBUTES = %i[
+    title
+    description
+    features
+    price
+    sale_price
+    preview
+    meta_description
+    meta_keywords
+    slug
+    created_at
+    updated_at
+  ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
@@ -56,8 +68,6 @@ class StockDashboard < Administrate::BaseDashboard
     price
     sale_price
     preview
-    amount
-    tags
     meta_description
     meta_keywords
     slug
@@ -66,7 +76,7 @@ class StockDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how stocks are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(stock)
-  #   "Stock ##{stock.id}"
-  # end
+  def display_resource(stock)
+    "Распродажа ##{stock.id}"
+  end
 end
