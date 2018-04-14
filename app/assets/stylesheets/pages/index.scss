@@ -6,13 +6,12 @@
   height: 300px;
   width: 100%;
   min-width: 1200px;
-  // background: url(asset-path('slide_1.png')) center center no-repeat;
   background-size: cover;
-  &._1{
+  &._1 {
     background: url(asset-path('slide_1.jpeg')) center center no-repeat;
     background-size: cover;
   }
-  &._2{
+  &._2 {
     background: url(asset-path('slide_2.jpeg')) center center no-repeat;
     background-size: cover;
   }
@@ -21,7 +20,6 @@
 
 
 .about {
-  display: inline-block;
   width: 850px;
   float: left;
   margin-bottom: 30px;
@@ -42,7 +40,6 @@
 .feedback {
   width: 324px;
   float: left;
-  display: inline-block;
   margin-left: 20px;
   border: 3px solid #0093e0;
   text-align: center;
@@ -55,7 +52,8 @@
 }
 
 .form {
-  &-input, &-area {
+  &-input,
+  &-area {
     display: block;
     width: 80%;
     margin: 20px auto;
@@ -109,7 +107,7 @@
     text-align: center;
     margin-bottom: 15px;
 
-    &:first-child, {
+    &:first-child {
       margin-left: 10px;
     }
 
@@ -151,14 +149,12 @@
       margin-bottom: 1.5rem;
       float: none;
 
-      &:first-child, {
-        // margin-left: 0px;
+      &:first-child {
         margin: 0 auto;
         margin-bottom: 1.5rem;
       }
 
       &:last-child {
-        // margin-right: 0px;
         margin: 0 auto;
       }
     }
@@ -184,7 +180,5 @@
     margin: 0;
     box-sizing: border-box;
     margin-bottom: 1rem;
-
   }
 }
-
