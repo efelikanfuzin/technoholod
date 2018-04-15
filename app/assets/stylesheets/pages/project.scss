@@ -3,7 +3,7 @@
 }
 
 .project-item {
-  border: 3px solid #7dc6ed;
+  border: 3px solid $blue;
   padding: 15px;
   display: block;
   text-decoration: none;
@@ -24,7 +24,7 @@
   &_title {
     margin-top: 0;
     margin-bottom: 10px;
-    color: #0193e1;
+    color: $blue;
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
@@ -51,12 +51,14 @@
   float: left;
   margin-left: 35px;
 }
+
 .project-gall{
   position: relative;
 
   .swiper-container {
     height: 250px;
   }
+
   .swiper-slide {
     a {
       display: inline-block;

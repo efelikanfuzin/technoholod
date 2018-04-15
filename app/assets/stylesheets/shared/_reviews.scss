@@ -1,142 +1,57 @@
 .reviews {
   width: 100%;
   height: 300px;
-  background: #0093e0;
+  background-color: white;
   clear: both;
   margin-bottom: 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22);
 
   &_slide {
-    width: 80%;
     height: 100%;
-    margin: 0 auto;
-  }
-
-  &_prev, &_next {
-    position: absolute;
-    top: 50%;
-    width: 43px;
-    height: 43px;
-    margin-top: -21px;
-    z-index: 10;
-    cursor: pointer;
-    background-size: cover;
-  }
-
-  &_prev {
-    background-image: url(asset-path('prev_btn.png'));
-    left: 50px;
-    right: auto;
-  }
-  &_next {
-    background-image: url(asset-path('next_btn.png'));
-    right: 50px;
-    left: auto;
+    padding: 2rem 3rem;
   }
 
   &_author {
     float: left;
-    margin-top: 50px;
-    color: #fff;
     width: 210px;
+    text-align: center;
 
     &_avatar {
       width: 128px;
       height: 128px;
       display: inline-block;
       position: relative;
-      margin-left: 20px;
       border-radius: 50%;
+      margin-bottom: .5rem;
     }
 
     &_name {
-      font-size: 18px;
+      font-size: 1.2rem;
       font-weight: 700;
-      background: none;
+      margin-bottom: .2rem;
     }
 
     &_job {
-      font-size: 14px;
-      font-weight: 300;
-      background: none;
+      font-size: .9rem;
+      line-height: 1.3;
     }
   }
 
   &_text {
-      float: left;
-      height: 150px;
-      width: 650px;
-      margin-top: 40px;
-      margin-left: 50px;
-      background: #fff;
-      padding: 23px 15px;
-      font-style: italic;
-      font-weight: 300;
-      box-shadow: rgb(0, 126, 193) 1px 1px,
-                  rgb(0, 126, 193) 2px 2px,
-                  rgb(0, 126, 193) 3px 3px,
-                  rgb(0, 126, 193) 4px 4px,
-                  rgb(0, 126, 193) 5px 5px,
-                  rgb(0, 126, 193) 6px 6px,
-                  rgb(0, 126, 193) 7px 7px,
-                  rgb(0, 126, 193) 8px 8px,
-                  rgb(0, 126, 193) 9px 9px,
-                  rgb(0, 126, 193) 10px 10px,
-                  rgb(0, 126, 193) 11px 11px,
-                  rgb(0, 126, 193) 12px 12px,
-                  rgb(0, 126, 193) 13px 13px,
-                  rgb(0, 126, 193) 14px 14px,
-                  rgb(0, 126, 193) 15px 15px,
-                  rgb(0, 126, 193) 16px 16px,
-                  rgb(0, 126, 194) 17px 17px,
-                  rgb(0, 127, 195) 18px 18px,
-                  rgb(0, 127, 195) 19px 19px,
-                  rgb(0, 128, 196) 20px 20px,
-                  rgb(0, 128, 197) 21px 21px,
-                  rgb(0, 129, 197) 22px 22px,
-                  rgb(0, 129, 198) 23px 23px,
-                  rgb(0, 130, 199) 24px 24px,
-                  rgb(0, 130, 199) 25px 25px,
-                  rgb(0, 131, 200) 26px 26px,
-                  rgb(0, 131, 201) 27px 27px,
-                  rgb(0, 132, 201) 28px 28px,
-                  rgb(0, 132, 202) 29px 29px,
-                  rgb(0, 133, 203) 30px 30px,
-                  rgb(0, 133, 204) 31px 31px,
-                  rgb(0, 133, 204) 32px 32px,
-                  rgb(0, 134, 205) 33px 33px,
-                  rgb(0, 134, 206) 34px 34px,
-                  rgb(0, 135, 206) 35px 35px,
-                  rgb(0, 135, 207) 36px 36px,
-                  rgb(0, 136, 208) 37px 37px,
-                  rgb(0, 136, 208) 38px 38px,
-                  rgb(0, 137, 209) 39px 39px,
-                  rgb(0, 137, 210) 40px 40px,
-                  rgb(0, 138, 210) 41px 41px,
-                  rgb(0, 138, 211) 42px 42px,
-                  rgb(0, 139, 212) 43px 43px,
-                  rgb(0, 139, 212) 44px 44px,
-                  rgb(0, 140, 213) 45px 45px,
-                  rgb(0, 140, 214) 46px 46px,
-                  rgb(0, 140, 215) 47px 47px,
-                  rgb(0, 141, 215) 48px 48px,
-                  rgb(0, 141, 216) 49px 49px,
-                  rgb(0, 142, 217) 50px 50px,
-                  rgb(0, 142, 217) 51px 51px,
-                  rgb(0, 143, 218) 52px 52px,
-                  rgb(0, 143, 219) 53px 53px,
-                  rgb(0, 144, 219) 54px 54px,
-                  rgb(0, 144, 220) 55px 55px,
-                  rgb(0, 145, 221) 56px 56px,
-                  rgb(0, 145, 221) 57px 57px,
-                  rgb(0, 146, 222) 58px 58px,
-                  rgb(0, 146, 223) 59px 59px,
-                  rgb(0, 147, 224) 60px 60px;
+    float: left;
+    width: 700px;
+    background: #fff;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-left: 2rem;
   }
 }
 
 .review_1 {
-  background: url(asset-path('review_1.png'));
+  background: url(asset-path('review_1.png')) center center no-repeat;
+  background-size: cover;
 }
 .review_2 {
-  background: url(asset-path('review_2.png'));
+  background: url(asset-path('review_2.png')) center center no-repeat;
+  background-size: cover;
 }

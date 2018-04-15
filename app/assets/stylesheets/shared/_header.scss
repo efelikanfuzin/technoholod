@@ -22,14 +22,12 @@
   &_item {
     float: left;
     box-sizing: border-box;
-    padding: 25px 0px;
-    width: 140px;
+    padding: 25px 20px;
     text-align: center;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     cursor: pointer;
     transition: .3s font-weight;
-    box-sizing: border-box;
     text-decoration: none;
     color: #191012;
 
@@ -38,7 +36,6 @@
     }
 
     &:hover {
-      font-weight: 400;
       color: #014d89;
     }
   }
@@ -48,7 +45,7 @@
     padding-left: 15px;
     font-size: 18px;
     font-weight: 900;
-    color: #014d89;
+    color: $blue;
   }
 
   .contacts {
@@ -92,7 +89,7 @@
       display: block;
       float: none;
       margin: .5rem;
-      background-color: #c10302;
+      background-color: $red;
       color: white;
       font-size: 16px;
       font-weight: 400;

@@ -1,23 +1,16 @@
 .wrapper_footer.
   .content.
     nav.footer.cf
-      div.footer_copy #{Time.now.year} © Технохолод
-      a.footer_item href="/products" Продукция
-      a.footer_item href="/stocks" Распродажа
-      a.footer_item href="/projects" Наши проекты
-      a.footer_item href="/about" О компании
-      a.footer_item href="/blogs" Полезное
-      a.footer_item href="/contacts" Контакты
+      div.footer_copy #{Time.now.year} © ТехноХолод
+      = link_to 'Главная', root_path, class: 'footer_item'
+      = link_to 'Продукция', products_path, class: 'footer_item'
+      = link_to 'Распродажа', stocks_path, class: 'footer_item'
+      = link_to 'Проекты', projects_path, class: 'footer_item'
+      = link_to 'О компании', about_path, class: 'footer_item'
+      = link_to 'Блог', blogs_path, class: 'footer_item'
+      = link_to 'Контакты', contacts_path, class: 'footer_item'
+
       .contacts
         .contacts_adress Брянск, ул. Крапивницкого, 15
         a.contacts_phone href="tel:+74832663053" 8(4832) 66-30-53
-      a.contacts_btn#inline href="#feedback_main" ОБРАТНАЯ СВЯЗЬ
-div style="display:none"
-  #feedback_main
-    span.feedback_title ОБРАТНАЯ СВЯЗЬ
-    = form_tag("/feedback", method: "post") do
-      = text_field_tag(:name, nil, placeholder: 'ФИО', class: 'form-input')
-      = text_field_tag(:phone, nil, placeholder: 'Ваш телефон', class: 'form-input')
-      = text_area_tag(:message, nil, placeholder: 'Ваше сообщение', class: 'form-area')
-      = submit_tag("ОТПРАВИТЬ ЗАЯВКУ", class: 'form-submit')
-
+      = link_to 'ОБРАТНАЯ СВЯЗЬ', root_path(anchor: :feedback_block), class: 'contacts_btn'

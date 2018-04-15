@@ -23,24 +23,10 @@
       .pros_text  Широкий ассортимент
 
 .content
-  - unless @stocks.empty?
-    .stock.cf
-      .stock--sale
-        span.stock_item_sale Распродажа товара
-      - if @stocks
-        - for stock in @stocks
-          .stock_item
-            span.stock_item_price = "#{stock.sale_price} ₽"
-            span.stock_item_old-price = "#{stock.price} ₽"
-            .stock_item-img style=("background-image: url(#{stock.preview.thumb})")
-            .stock_field
-              = link_to('ПОДРОБНЕЕ', stock, class: 'stock_item_more')
-            p.stock_item_title = stock.title
-
   .about.text_content
     h1.about_title ООО «ТехноХолод» - надежный поставщик оборудования в Брянске
 
-    p.about_text Компания «Технохолод» предлагает комплексное решение по оснащению профессиональным оборудованием Вашего магазина, ресторана, кафе, бара, столовой, пиццерии.
+    p.about_text Компания «ТехноХолод» предлагает комплексное решение по оснащению профессиональным оборудованием Вашего магазина, ресторана, кафе, бара, столовой, пиццерии.
 
     p.about_text
       strong Мы предлагаем   широкий ассортимент профессионального оборудования
@@ -61,14 +47,24 @@
     p.about_text
       strong Сервисная служба произведет монтаж, обслуживание и ремонт оборудования.
 
-  .feedback
+  .feedback#feedback_block
     span.feedback_title ОБРАТНАЯ СВЯЗЬ
     = form_tag("/feedback", method: "post") do
       = text_field_tag(:name, nil, placeholder: 'ФИО', class: 'form-input')
       = text_field_tag(:phone, nil, placeholder: 'Ваш телефон', class: 'form-input')
       = text_area_tag(:message, nil, placeholder: 'Ваше сообщение', class: 'form-area')
-      = recaptcha_tags
-
+      = recaptcha_tags id: :recaptcha
       = submit_tag("ОТПРАВИТЬ ЗАЯВКУ", class: 'form-submit')
+
+  - unless @stocks.empty?
+    .stock.cf
+      .stock--sale
+        span.stock_item_sale Распродажа товара
+      - for stock in @stocks
+        = link_to stock, class: 'stock_item'
+          span.stock_item_price = "#{stock.sale_price} ₽"
+          span.stock_item_old-price = "#{stock.price} ₽"
+          .stock_item-img style=("background-image: url(#{stock.preview.thumb})")
+          p.stock_item_title = stock.title
 
   = render 'shared/reviews'

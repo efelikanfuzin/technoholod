@@ -48,13 +48,13 @@ h1 {
 
 .left-side {
   width: 300px;
-  background: #fff;
+  background: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22);
 }
 
 .right-side {
   width: 900px;
-  padding: 0 20px;
+  padding-left: 1rem;
 }
 
 .text_content {
@@ -103,4 +103,8 @@ h1 {
   p {
     margin: 1rem 0;
   }
+}
+
+#recaptcha {
+  margin-bottom: 1rem;
 }
