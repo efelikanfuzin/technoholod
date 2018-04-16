@@ -80,17 +80,19 @@ GEM
       sshkit (>= 1.6.1, != 1.7.0)
     arel (9.0.0)
     ast (2.4.0)
-    autoprefixer-rails (8.2.0)
+    autoprefixer-rails (8.3.0)
       execjs
-    babosa (1.0.2)
     bcrypt (3.1.11)
+    better_errors (2.4.0)
+      coderay (>= 1.0.0)
+      erubi (>= 1.0.0)
+      rack (>= 0.9.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
     bootsnap (1.3.0)
       msgpack (~> 1.0)
     builder (3.2.3)
-    byebug (10.0.2)
-    capistrano (3.10.1)
+    capistrano (3.10.2)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
@@ -112,13 +114,6 @@ GEM
       puma (~> 3.4)
     climate_control (0.2.0)
     coderay (1.1.2)
-    coffee-rails (4.2.2)
-      coffee-script (>= 2.2.0)
-      railties (>= 4.0.0)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     datetime_picker_rails (0.0.7)
@@ -141,9 +136,6 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.0.0)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.7.0)
-      activesupport (>= 4.2.0)
-      multi_json (>= 1.2)
     jquery-rails (4.3.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -182,7 +174,6 @@ GEM
     momentjs-rails (2.20.1)
       railties (>= 3.1)
     msgpack (1.2.4)
-    multi_json (1.13.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (4.2.0)
@@ -232,13 +223,12 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    rdoc (6.0.3)
     recaptcha (4.8.0)
       json
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
-    rubocop (0.54.0)
+    rubocop (0.55.0)
       parallel (~> 1.10)
       parser (>= 2.5)
       powerpack (~> 0.1)
@@ -268,8 +258,6 @@ GEM
       sprockets (> 2.11)
       sprockets-rails
       tilt
-    sdoc (1.0.0)
-      rdoc (>= 5.0)
     selectize-rails (0.12.4.1)
     slim (3.0.9)
       temple (>= 0.7.6, < 0.9)
@@ -296,9 +284,6 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
-    turbo-sprockets-rails3 (0.2.9)
-      railties (>= 3.1.0)
-      sprockets (>= 2.0.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (4.1.9)
@@ -306,11 +291,6 @@ GEM
     unicode-display_width (1.3.0)
     warden (1.2.7)
       rack (>= 1.0)
-    web-console (2.3.0)
-      activemodel (>= 4.0)
-      binding_of_caller (>= 0.7.2)
-      railties (>= 4.0)
-      sprockets-rails (>= 2.0, < 4.0)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
@@ -320,23 +300,20 @@ PLATFORMS
 
 DEPENDENCIES
   administrate!
-  babosa
+  better_errors
+  binding_of_caller
   bootsnap
-  bundler
-  byebug
   capistrano
   capistrano-bundler
-  capistrano-faster-assets (~> 1.0)
+  capistrano-faster-assets
   capistrano-rails
   capistrano-rvm
   capistrano3-puma
   carrierwave!
   ckeditor!
-  coffee-rails
   devise
   fancybox-rails
   friendly_id
-  jbuilder
   jquery-rails
   kaminari
   meta-tags
@@ -349,13 +326,10 @@ DEPENDENCIES
   recaptcha
   rubocop
   sassc-rails
-  sdoc
   slim-rails
   spring
   sprockets-rails
-  turbo-sprockets-rails3
   uglifier
-  web-console (~> 2.0)
 
 RUBY VERSION
    ruby 2.5.1p57
