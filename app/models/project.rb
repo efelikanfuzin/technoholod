@@ -7,4 +7,6 @@ class Project < ApplicationRecord
   friendly_id :title, use: :slugged
   mount_uploader :preview_img, PreviewUploader
   mount_uploaders :photos, PreviewUploader
+
+  validates :title, :content, :preview, :preview_img, presence: true
 end

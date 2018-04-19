@@ -6,4 +6,6 @@ class Blog < ApplicationRecord
 
   friendly_id :title, use: :slugged
   mount_uploader :preview_img, PreviewUploader
+
+  validates :title, :preview, :preview_img, :content, presence: true
 end

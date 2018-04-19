@@ -6,4 +6,6 @@ class Stock < ApplicationRecord
 
   friendly_id :title, use: :slugged
   mount_uploader :preview, PreviewUploader
+
+  validates :title, :description, :price, :sale_price, :preview, presence: true
 end
