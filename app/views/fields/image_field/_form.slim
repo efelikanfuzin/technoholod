@@ -2,3 +2,4 @@
   = f.label field.attribute
 .field-unit__field
   = f.file_field field.attribute
+  = image_tag(field.thumb) unless field.thumb.blank?

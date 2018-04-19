@@ -1,4 +1,7 @@
 .field-unit__label
-    = f.label field.attribute
+  = f.label field.attribute
 .field-unit__field
-    = f.file_field field.attribute, multiple: true
+  = f.file_field field.attribute, multiple: true
+  - field.data.each do |file|
+    .image-container
+      img src=file.url alt=file.filename width="200px"
