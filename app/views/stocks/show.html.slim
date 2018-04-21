@@ -26,7 +26,7 @@
 div style="display:none"
   #feedback
     span.feedback_title ОБРАТНАЯ СВЯЗЬ
-    = form_tag("/stocks", method: "post") do
+    = form_tag("/stocks", method: "post", onsubmit: "45741711.reachGoal('stockOrder'); return true;") do
       <br><br>
       p = @stock.title
       = hidden_field nil, :stock_id, value: @stock.id

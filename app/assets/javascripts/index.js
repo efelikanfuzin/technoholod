@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
   $(".fancybox").fancybox();
+  $("a#inline").fancybox({
+    showCloseButton: true
+  });
 
   new Swiper('[data-main-gal]', {
     autoplay: {
