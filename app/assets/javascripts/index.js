@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+
   $(".fancybox").fancybox();
   $("a#inline").fancybox({
     showCloseButton: true
@@ -38,7 +40,7 @@ $(document).ready(function() {
       delay: 2500,
     },
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: isMobile ? 1 : 3,
     spaceBetween: 30,
     navigation: {
       nextEl: '[data-prodject-gall-next]',

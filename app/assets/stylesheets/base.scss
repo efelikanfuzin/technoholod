@@ -67,6 +67,20 @@ h1 {
   letter-spacing: -.003em;
 }
 
+.content_block_text {
+  width: 900px;
+  display: block;
+  margin: 0 auto;
+
+  p {
+    margin: 1rem 0;
+  }
+}
+
+#recaptcha {
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 767px) {
   .content {
     width: 100%;
@@ -87,24 +101,15 @@ h1 {
 
   .right-side {
     width: 100%;
-    padding: 0;
+    padding: 1rem;
 
     & h1 {
       text-align: center;
     }
   }
-}
 
-.content_block_text {
-  width: 900px;
-  display: block;
-  margin: 0 auto;
-
-  p {
-    margin: 1rem 0;
+  .content_block_text {
+    width: auto;
+    padding: 1rem;
   }
-}
-
-#recaptcha {
-  margin-bottom: 1rem;
 }

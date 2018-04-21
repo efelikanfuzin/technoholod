@@ -62,3 +62,15 @@
 .text_block {
   line-height: 1.5;
 }
+
+@media (max-width: 767px) {
+  .blog-item_content {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .blog-img {
+    width: 100%;
+    margin-right: 0;
+  }
+}
