@@ -9,19 +9,17 @@
   .stock-wrapper.cf
     .stock-left-col
       a.fancybox href="#{@stock.preview}"
-        = image_tag(@stock.preview.url, class: 'stock_img_big stock_img')
+        = image_tag @stock.preview.preview.url, alt: @stock.title, class: 'stock_img_big stock_img'
     .stock-right-col
       .cf
         .stock_price.stock_price-show = "#{@stock.sale_price} ₽"
         a.stock_buy-btn.stock_buy-btn-show#inline href='#feedback' ЗАКАЗАТЬ
-      hr.stock_hr.mobile_hide
       .stock-info_desc
         h3 ОПИСАНИЕ
         .stock_desc
           = raw @stock.description
         - unless @stock.features.blank?
           .stock_features
-            hr.stock_hr.mobile_hide
             h3 ХАРАКТЕРИСТИКИ
             = raw @stock.features
 

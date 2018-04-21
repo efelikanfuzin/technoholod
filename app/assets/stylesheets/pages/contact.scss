@@ -1,6 +1,11 @@
-.contact_title {
-  color: $text-color;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  font-weight: 700;
+.contact {
+  &_title {
+    color: $text-color;
+    font-weight: 700;
+  }
+
+  &_table {
+    border-collapse: separate;
+    border-spacing: .3rem .5em;
+  }
 }

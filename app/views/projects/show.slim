@@ -18,7 +18,8 @@
         .swiper-wrapper.project-gall-wrapper
           - for image in @photos
             .swiper-slide
-              a.fancybox href="#{image}" style="background-image: url(#{image});"
+              a.fancybox href=image
+                = image_tag image.preview.url, alt: @project.title
 
         .swiper-button-prev.project-gall-prev data-prodject-gall-prev=''
         .swiper-button-next.project-gall-next data-prodject-gall-next=''

@@ -4,18 +4,34 @@
     span.arrow >
     h1.last Контакты
 
-  table
-    tr
+  table.vcard.contact_table
+    span.fn.org.value-title title="ТехноХолод"
+    span.category.value-title title="Оборудованием для магазинов"
+
+    tr.adr
       td.contact_title Адрес:
-      td 241050, г. Брянск, ул. Крапивницкого, 15
-    tr
+      td
+        span.postal-code 241050
+        |, &nbsp;
+        span.locality г. Брянск
+        |, &nbsp;
+        span.street-address ул. Крапивницкого, 15
+    tr.tel
       td.contact_title Телефон:
-      td (4832) 66-30-53, 8-953-271-68-08
+      td
+        a.value href="tel:+7(4832)66-30-53" 66-30-53
+        |, &nbsp;
+        a.value href="tel:+7(953)271-68-08" 8-953-271-68-08
     tr
       td.contact_title Факс:
-      td (4832) 74-35-67
+      td.fax (4832) 74-35-67
     tr
       td.contact_title E-mail:
-      td info@tehnoholod.ru
+      td 
+        a.email href="mailto:info@tehnoholod.ru" info@tehnoholod.ru
+    tr
+      td.contact_title Время работы:
+      td
+        span.workhours пн-чт 9:00-18:00, пт 9:00-17:30
 
   script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QD_lRXf8yNJvTK7WHiQ7DGvAYybW7QPa&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=false"

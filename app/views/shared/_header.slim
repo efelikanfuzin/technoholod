@@ -1,7 +1,8 @@
 .wrapper
   .content
     nav.header.cf
-      = link_to '', root_path, class: 'header_logo'
+      = link_to root_path, class: 'header_logo' do
+        = image_tag 'logo.png', alt: 'ТехноХолод'
       = link_to 'ПРОДУКЦИЯ',  products_path, class: 'header_item'
       = link_to 'РАСПРОДАЖА', stocks_path, class: 'header_item'
       = link_to 'ПРОЕКТЫ', projects_path, class: 'header_item'

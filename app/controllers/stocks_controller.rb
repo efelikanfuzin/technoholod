@@ -11,7 +11,7 @@ class StocksController < ApplicationController
     page = Page.find_by(name: :stocks)
     set_meta_tags page.slice(:title, :description, :keywords) if page
 
-    @stocks = Stock.limit(20)
+    @stocks = Stock.page(params[:page]).order(id: :desc).per(8)
   end
 
   def create

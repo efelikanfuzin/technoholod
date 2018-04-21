@@ -35,8 +35,7 @@ $(document).ready(function() {
       delay: 2500,
     },
     loop: true,
-    slidesPerView: 4,
-    watchSlidesVisibility: true,
+    slidesPerView: 3,
     spaceBetween: 30,
     navigation: {
       nextEl: '[data-prodject-gall-next]',
