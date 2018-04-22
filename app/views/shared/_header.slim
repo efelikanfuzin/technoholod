@@ -1,14 +1,14 @@
 .wrapper
   .content
     nav.header.cf
-      = link_to root_path, class: 'header_logo' do
+      = link_to root_path, class: 'header_logo', rel: :canonical do
         = image_tag 'logo.png', alt: 'ТехноХолод'
-      = link_to 'ПРОДУКЦИЯ',  products_path, class: 'header_item'
-      = link_to 'РАСПРОДАЖА', stocks_path, class: 'header_item'
-      = link_to 'ПРОЕКТЫ', projects_path, class: 'header_item'
-      = link_to 'О КОМПАНИИ', about_path, class: 'header_item'
-      = link_to 'БЛОГ',  blogs_path, class: 'header_item'
-      = link_to 'КОНТАКТЫ', contacts_path, class: 'header_item'
+      = link_to 'ПРОДУКЦИЯ',  products_path, class: 'header_item', rel: :canonical
+      = link_to 'РАСПРОДАЖА', stocks_path, class: 'header_item', rel: :canonical
+      = link_to 'ПРОЕКТЫ', projects_path, class: 'header_item', rel: :canonical
+      = link_to 'О КОМПАНИИ', about_path, class: 'header_item', rel: :canonical
+      = link_to 'БЛОГ',  blogs_path, class: 'header_item', rel: :canonical
+      = link_to 'КОНТАКТЫ', contacts_path, class: 'header_item', rel: :canonical
 
       .contacts
         .contacts_adress Брянск, ул. Крапивницкого, 15

@@ -263,6 +263,8 @@ GEM
       sprockets-rails
       tilt
     selectize-rails (0.12.4.1)
+    sitemap_generator (6.0.1)
+      builder (~> 3.0)
     slim (3.0.9)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 1.3.3, < 2.1)
@@ -332,6 +334,7 @@ DEPENDENCIES
   recaptcha
   rubocop
   sassc-rails
+  sitemap_generator
   slim-rails
   spring
   sprockets-rails

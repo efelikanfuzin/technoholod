@@ -1,11 +1,11 @@
 .content._projects
   .breadcrumbs
-    = link_to 'Главная', root_path
+    = link_to 'Главная', root_path, rel: :canonical
     span.arrow >
     h1.last Проекты
 
   - for project in @projects
-    = link_to project, class: 'blog-item' do
+    = link_to project, class: 'blog-item', rel: :canonical do
       - unless project.preview_img.preview.blank?
         .blog-img
           = image_tag project.preview_img.preview.url, alt: project.title

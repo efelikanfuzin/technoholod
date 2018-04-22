@@ -1,8 +1,8 @@
 .content.main-content
   .breadcrumbs
-    = link_to 'Главная', root_path
+    = link_to 'Главная', root_path, rel: :canonical
     span.arrow >
-    = link_to 'Распродажа', stocks_path
+    = link_to 'Распродажа', stocks_path, rel: :canonical
     span.arrow >
     h1.last = @stock.title
 

@@ -45,4 +45,5 @@ group :development do
   gem 'pry'
   gem 'rubocop', require: false
   gem 'spring'
+  gem 'sitemap_generator'
 end

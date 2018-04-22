@@ -1,11 +1,11 @@
 .content.cf.main-content
   .breadcrumbs
-    = link_to 'Главная', root_path
+    = link_to 'Главная', root_path, rel: :canonical
     span.arrow >
     h1.last Блог
 
   - for post in @blog_posts
-    = link_to post, class: 'blog-item' do
+    = link_to post, class: 'blog-item', rel: :canonical do
       - unless post.preview_img.preview.blank?
         .blog-img
           = image_tag post.preview_img.preview.url, alt: post.title

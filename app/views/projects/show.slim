@@ -1,8 +1,8 @@
 .content.cf
   .breadcrumbs
-    = link_to 'Главная', root_path
+    = link_to 'Главная', root_path, rel: :canonical
     span.arrow >
-    = link_to 'Проекты', projects_path
+    = link_to 'Проекты', projects_path, rel: :canonical
     span.arrow >
     h1.last = @project.title
 
