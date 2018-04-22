@@ -21,6 +21,7 @@ gem 'rails', '5.2.0.rc2'
 gem 'rails-i18n'
 gem 'recaptcha', require: 'recaptcha/rails'
 gem 'sassc-rails'
+gem 'sitemap_generator'
 gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'uglifier'
@@ -45,5 +46,4 @@ group :development do
   gem 'pry'
   gem 'rubocop', require: false
   gem 'spring'
-  gem 'sitemap_generator'
 end
