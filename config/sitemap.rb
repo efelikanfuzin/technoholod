@@ -1,5 +1,5 @@
-# Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "https://tehnoholod.ru"
+SitemapGenerator::Sitemap.default_host = 'https://tehnoholod.ru'
+SitemapGenerator::Sitemap.compress = false
 
 SitemapGenerator::Sitemap.create do
   add about_path, priority: 1.0, changefreq: 'monthly'

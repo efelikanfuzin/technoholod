@@ -25,6 +25,7 @@ gem 'sitemap_generator'
 gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'uglifier'
+gem 'whenever', require: false
 
 group :assets do
   gem 'fancybox-rails'

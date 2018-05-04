@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Host: https://tehnoholod.ru
-sitemap: https://tehnoholod.ru/sitemap.xml.gz
+Sitemap: https://tehnoholod.ru/sitemap.xml
