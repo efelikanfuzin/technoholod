@@ -10,6 +10,8 @@ class BlogsController < ApplicationController
 
   def show
     (@post = Blog.friendly.find(params[:id])) || not_found
+    id_not_slug? && redirect_to(blog_path(@post), status: :moved_permanently)
+
     set_meta_tags @post.slice(:title, :description, :keywords) if @post
   end
 end

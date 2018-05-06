@@ -19,4 +19,8 @@ class ApplicationController < ActionController::Base
                   description: page.try(:description),
                   keywords: page.try(:keywords)
   end
+
+  def id_not_slug?
+    params[:id].to_i.positive?
+  end
 end

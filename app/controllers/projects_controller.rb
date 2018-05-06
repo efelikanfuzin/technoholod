@@ -12,6 +12,9 @@ class ProjectsController < ApplicationController
     (@project = Project.friendly.find(params[:id])) || not_found
 
     return unless @project
+    if id_not_slug?
+      redirect_to(project_path(@project), status: :moved_permanently)
+    end
 
     @photos = @project.photos
     set_meta_tags @project.slice(:title, :description, :keywords)

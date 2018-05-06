@@ -4,6 +4,7 @@ class StocksController < ApplicationController
   before_action :set_stock, only: :show
 
   def show
+    id_not_slug? && redirect_to(stock_path(@stock), status: :moved_permanently)
     set_meta_tags @stock.slice(:title, :meta_description, :meta_keywords)
   end
 
