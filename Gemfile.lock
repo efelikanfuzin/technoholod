@@ -336,7 +336,7 @@ DEPENDENCIES
   rails-assets-swiper!
   rails-i18n
   recaptcha
-  rubocop
+  rubocop (~> 0.58.1)
   sassc-rails
   sitemap_generator
   slim-rails

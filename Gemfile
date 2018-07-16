@@ -45,6 +45,6 @@ group :development do
   gem 'capistrano-rvm', require: false
   gem 'capistrano3-puma', require: false
   gem 'pry'
-  gem 'rubocop', require: false
+  gem 'rubocop', '~> 0.58.1', require: false
   gem 'spring'
 end

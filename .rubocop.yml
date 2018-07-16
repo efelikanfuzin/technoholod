@@ -1,9 +1,4 @@
 AllCops:
-  Include:
-    - '**/Rakefile'
-    - '**/config.ru'
-    - '**/Gemfile'
-    - '**/Capfile'
   Exclude:
     - 'db/**/*'
     - 'bin/**/*'
