@@ -28,7 +28,7 @@
 
     &_sale {
       font-size: 2.8rem;
-      color: $text-color;
+      color: #3c3a3a;
     }
 
     &_price {
@@ -36,7 +36,7 @@
       top: 10px;
       left: 0;
       font-size: 25px;
-      background: $red;
+      background: #C10302;
       padding: 5px 15px;
       color: #fff;
     }
@@ -64,14 +64,14 @@
       margin: 0 auto;
       padding: 10px 0;
       text-align: center;
-      border: 1px solid $red;
-      color: $red;
+      border: 1px solid #C10302;
+      color: #C10302;
       font-size: 16px;
       text-decoration: none;
       transition: all 0.4s;
 
       &:hover {
-        background-color: $red;
+        background-color: #C10302;
         color: white;
       }
     }
@@ -134,14 +134,14 @@
     width: 150px;
     margin: 20px auto;
     padding: 10px 15px;
-    background: $blue;
+    background: #0193e1;
     border-radius: 3px;
     text-decoration: none;
     color: #fff;
     transition: all 0.4s;
 
     &:hover {
-      background-color: $red;
+      background-color: #C10302;
     }
 
     &-show {
@@ -156,7 +156,7 @@
     box-sizing: border-box;
     width: 100%;
     padding: 5px 5px;
-    background: $red;
+    background: #C10302;
     color: #fff;
     font-size: 30px;
 
@@ -191,7 +191,7 @@
 
   &_hr {
     margin-top: 10px;
-    background-color: $gray;
+    background-color: #666;
   }
 }
 
@@ -201,7 +201,7 @@
   overflow-wrap: break-word;
 
   a {
-    color: $gray;
+    color: #666;
     text-decoration: none;
   }
 

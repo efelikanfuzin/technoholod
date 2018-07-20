@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "baguettebox.js": "^1.10.0",
+    "swiper": "^4.3.3"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}

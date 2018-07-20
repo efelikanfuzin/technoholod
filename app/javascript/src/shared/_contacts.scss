@@ -4,7 +4,7 @@
   float: left;
 
   &_phone {
-    color: $text-color;
+    color: #3c3a3a;
     font-size: 20px;
     font-weight: 900;
     line-height: 18px;
@@ -13,7 +13,7 @@
   }
 
   &_adress {
-    color: $text-color;
+    color: #3c3a3a;
     font-size: 12px;
     font-weight: 300;
     line-height: 18px;
@@ -21,7 +21,7 @@
 
   &_btn {
     display: inline-block;
-    background-color: $red;
+    background-color: #C10302;
     color: white;
     font-size: 16px;
     font-weight: 400;
@@ -33,7 +33,7 @@
     float: left;
 
     &:hover {
-      background-color: $red;
+      background-color: #C10302;
     }
   }
 }

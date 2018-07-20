@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-
   $(".fancybox").fancybox();
   $("a#inline").fancybox({
     showCloseButton: true
