@@ -11,7 +11,6 @@ gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'devise'
 gem 'friendly_id'
-gem 'jquery-rails'
 gem 'kaminari'
 gem 'meta-tags'
 gem 'mini_magick'
@@ -20,21 +19,12 @@ gem 'puma'
 gem 'rails', '5.2.0'
 gem 'rails-i18n'
 gem 'recaptcha', require: 'recaptcha/rails'
-gem 'sassc-rails'
 gem 'sitemap_generator'
 gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'uglifier'
 gem 'webpacker'
 gem 'whenever', require: false
-
-group :assets do
-  gem 'fancybox-rails'
-end
-
-source 'https://rails-assets.org' do
-  gem 'rails-assets-swiper'
-end
 
 group :development do
   gem 'better_errors'

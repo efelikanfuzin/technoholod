@@ -17,6 +17,7 @@ class DashboardManifest
     products
     projects
     blogs
+    reviews
   ].freeze
 
   # `ROOT_DASHBOARD`

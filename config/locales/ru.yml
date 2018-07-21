@@ -60,6 +60,14 @@ ru:
         slug: "Название адресной строки"
         created_at: "Дата создания"
         updated_at: "Дата обновления"
+      review:
+        full_name: "Полное имя"
+        content: "Отзыв"
+        job: "Место работы"
+        photo: "Фотография"
+        show: "Показывать?"
+        created_at: "Дата создания"
+        updated_at: "Дата обновления"
   activerecord:
     models:
       blog:
@@ -77,6 +85,9 @@ ru:
       project:
         one: "Проект"
         other: "Проекты"
+      review:
+        one: "Отзыв"
+        other: "Отзывы"
     attributes:
       blog:
         id: "Номер"
@@ -137,5 +148,11 @@ ru:
         slug: "Название адресной строки"
         created_at: "Дата создания"
         updated_at: "Дата обновления"
-
-      
+      review:
+        full_name: "Полное имя"
+        content: "Отзыв"
+        job: "Место работы"
+        photo: "Фотография"
+        show: "Показывать?"
+        created_at: "Дата создания"
+        updated_at: "Дата обновления"

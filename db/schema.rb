@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_18_211257) do
+ActiveRecord::Schema.define(version: 2018_07_21_204135) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -99,6 +99,16 @@ ActiveRecord::Schema.define(version: 2018_04_18_211257) do
     t.json "photos"
     t.string "slug", default: ""
     t.index ["slug"], name: "index_projects_on_slug"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string "full_name", null: false
+    t.string "job", null: false
+    t.string "content", null: false
+    t.string "photo", null: false
+    t.boolean "show"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "stocks", id: :serial, force: :cascade do |t|

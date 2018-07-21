@@ -5,6 +5,7 @@ class PagesController < ApplicationController
 
   def index
     @stocks = Stock.limit(7)
+    @reviews = Review.can_show
   end
 
   def about; end

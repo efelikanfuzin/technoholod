@@ -68,4 +68,5 @@
 
           p.stock_item_title = stock.title
 
-  = render 'shared/reviews'
+  - if @reviews.present?
+    = render 'shared/reviews', reviews: @reviews
