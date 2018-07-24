@@ -76,13 +76,14 @@
 .project-gall-prev {
   margin-top: -14px;
   left: -30px;
-  background: url('../images/prev.png') center center no-repeat;
+  
+  background: url('../static/images/prev.png') center center no-repeat;
 }
 
 .project-gall-next {
   margin-top: -14px;
   right: -30px;
-  background: url('../images/next.png') center center no-repeat;
+  background: url('../static/images/next.png') center center no-repeat;
 }
 
 @media (max-width: 767px) {
