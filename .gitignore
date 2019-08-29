@@ -13,5 +13,5 @@
 /tmp
 /public/uploads/*
 /node_modules
-/public/assets
+# /public/assets
 /public/packs
