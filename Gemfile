@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'bundler', '>= 1.8.4'
 
 gem 'json', '> 1.8.3'
-gem 'pg'
+gem 'pg', '0.18.4'
 gem 'puma'
 gem 'rails', '4.2.11.1'
 gem 'jbuilder'
@@ -15,7 +15,7 @@ gem 'uglifier'
 
 gem 'administrate', github: 'thoughtbot/administrate'
 gem 'babosa'
-gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem 'carrierwave', '< 2.0'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'devise'
 gem 'friendly_id'
@@ -40,7 +40,7 @@ group :development do
   gem 'capistrano3-puma', require: false
   gem 'pry'
   gem 'spring'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
 end
 
 source 'https://rails-assets.org' do
