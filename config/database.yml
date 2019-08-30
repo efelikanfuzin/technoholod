@@ -16,6 +16,5 @@ test:
 
 production:
   <<: *default
-  username: deploy
-  database: teсhnoholod_db
+  database: teсhnoholod_db_dev
   # password: <%= ENV['CINEMAFULL_DATABASE_PASSWORD'] %>
