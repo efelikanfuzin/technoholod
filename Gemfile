@@ -12,29 +12,23 @@ gem 'jquery-rails'
 gem 'sassc-rails'
 gem 'sprockets'
 gem 'uglifier'
-
-gem 'administrate', github: 'thoughtbot/administrate'
+gem 'administrate'
 gem 'babosa'
 gem 'carrierwave', '< 2.0'
-gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'ckeditor'
 gem 'devise'
 gem 'friendly_id'
 gem 'kaminari'
 gem 'meta-tags'
 gem 'mini_magick'
-gem 'recaptcha', require: 'recaptcha/rails'
+gem 'recaptcha'
 gem 'slim-rails'
-
-group :assets do
-  gem 'fancybox-rails'
-  gem 'turbo-sprockets-rails3'
-end
+gem 'fancybox-rails'
 
 group :development do
   gem 'byebug'
   gem 'capistrano', require: false
   gem 'capistrano-bundler', require: false
-  gem 'capistrano-faster-assets'
   gem 'capistrano-rails', require: false
   gem 'capistrano-rvm', require: false
   gem 'capistrano3-puma', require: false
