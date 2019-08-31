@@ -4,7 +4,7 @@
 lock '~> 3.11.1'
 
 set :application, 'tehnoholod'
-set :repo_url, 'git@github.com:efelikanfuzin/technoholod.git'
+set :repo_url, 'git@github.com:efelikanfuzin/tehnoholod.git'
 set :branch, :production
 set :deploy_to, "/home/deploy/apps/#{fetch(:application)}"
 
