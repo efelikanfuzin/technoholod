@@ -10,6 +10,7 @@ gem 'bootsnap', require: false
 gem 'carrierwave'
 gem 'ckeditor'
 gem 'devise'
+gem 'fancybox-rails'
 gem 'friendly_id'
 gem 'kaminari'
 gem 'meta-tags'
@@ -24,7 +25,6 @@ gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'uglifier'
 gem 'whenever', require: false
-gem 'fancybox-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-swiper'
