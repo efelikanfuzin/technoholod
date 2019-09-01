@@ -46,10 +46,10 @@
 }
 
 .review_1 {
-  background: url('../images/review_1.png') center center no-repeat;
+  background: url(asset-path('review_1.png')) center center no-repeat;
   background-size: cover;
 }
 .review_2 {
-  background: url('../images/review_2.png') center center no-repeat;
+  background: url(asset-path('review_2.png')) center center no-repeat;
   background-size: cover;
 }

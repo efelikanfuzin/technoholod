@@ -23,7 +23,6 @@ gem 'sitemap_generator'
 gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'uglifier'
-gem 'webpacker'
 gem 'whenever', require: false
 
 group :development do

@@ -1,0 +1,12 @@
+//= require swiper
+//= require fancybox
+
+$gray: #666;
+$red: #C10302;
+$blue: #0193e1;
+$text-color: #3c3a3a;
+
+@import 'base';
+@import 'shared/*';
+@import 'pages/*';
+@import 'pagination';
