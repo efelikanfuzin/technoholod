@@ -4,27 +4,31 @@ source 'https://rubygems.org'
 
 ruby '2.5.1'
 
-gem 'administrate', github: 'thoughtbot/administrate'
+gem 'administrate'
 gem 'babosa'
 gem 'bootsnap', require: false
-gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
-gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'carrierwave'
+gem 'ckeditor'
 gem 'devise'
+gem 'fancybox-rails'
 gem 'friendly_id'
 gem 'kaminari'
 gem 'meta-tags'
 gem 'mini_magick'
 gem 'pg', '~> 0.18'
 gem 'puma'
-gem 'rails', '5.2.0'
+gem 'rails', '5.2.0.rc2'
 gem 'rails-i18n'
 gem 'recaptcha', require: 'recaptcha/rails'
 gem 'sitemap_generator'
 gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'uglifier'
-gem 'webpacker'
 gem 'whenever', require: false
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-swiper'
+end
 
 group :development do
   gem 'better_errors'

@@ -12,9 +12,5 @@
 !/log/.keep
 /tmp
 /public/uploads/*
+/public/assets
 .DS_Store
-/public/packs
-/public/packs-test
-/node_modules
-yarn-debug.log*
-.yarn-integrity

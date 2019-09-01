@@ -2,7 +2,7 @@
   .content
     nav.header.cf
       = link_to root_path, class: 'header_logo', rel: :canonical do
-        = image_tag asset_pack_path('static/images/logo.png'), alt: 'ТехноХолод'
+        = image_tag 'logo.png', alt: 'ТехноХолод'
       = link_to 'ПРОДУКЦИЯ',  products_path, class: 'header_item', rel: :canonical
       = link_to 'РАСПРОДАЖА', stocks_path, class: 'header_item', rel: :canonical
       = link_to 'ПРОЕКТЫ', projects_path, class: 'header_item', rel: :canonical
