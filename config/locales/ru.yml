@@ -12,6 +12,8 @@ ru:
         slug: "Название адресной строки"
         created_at: "Дата создания"
         updated_at: "Дата обновления"
+        description_filled: "Описание"
+        keywords_filled: "Ключевые фразы"
       page:
         id: "Номер"
         name: "Название"
@@ -24,6 +26,8 @@ ru:
         slug: "Название адресной строки"
         created_at: "Дата создания"
         updated_at: "Дата обновления"
+        description_filled: "Описание"
+        keywords_filled: "Ключевые фразы"
       stock:
         id: "Номер"
         title: "Заголовок"
@@ -37,6 +41,8 @@ ru:
         slug: "Название адресной строки"
         created_at: "Дата создания"
         updated_at: "Дата обновления"
+        description_filled: "Описание"
+        keywords_filled: "Ключевые фразы"
       product:
         id: "Номер"
         title: "Название"
@@ -48,6 +54,8 @@ ru:
         slug: "Название адресной строки"
         created_at: "Дата создания"
         updated_at: "Дата обновления"
+        description_filled: "Описание"
+        keywords_filled: "Ключевые фразы"
       project:
         id: "Номер"
         title: "Заголовок"
@@ -60,6 +68,8 @@ ru:
         slug: "Название адресной строки"
         created_at: "Дата создания"
         updated_at: "Дата обновления"
+        description_filled: "Описание"
+        keywords_filled: "Ключевые фразы"
       review:
         full_name: "Полное имя"
         content: "Отзыв"

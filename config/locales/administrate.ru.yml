@@ -6,8 +6,8 @@ ru:
       destroy: Удалить
       edit: Редактировать
       edit_resource: Редактировать %{name}
-      show_resource: Показать %{name}
-      new_resource: Новый %{name}
+      show_resource: Открыть %{name}
+      new_resource: Добавить %{name}
       back: Вернуться назад
     controller:
       create:
@@ -21,8 +21,8 @@ ru:
         more: "%{count} из %{total_count}"
         none: Нет
     form:
-      error: ошибка
-      errors: "При сохранении %{resource_name} произошли следующие ошибки:"
+      error: Ошибка
+      errors: "При сохранении %{resource_name} произошли ошибки:"
     search:
       clear: Очистить поиск
-label: Поиск %{resource}
+      label: Поиск

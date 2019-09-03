@@ -9,4 +9,12 @@ class Project < ApplicationRecord
   mount_uploaders :photos, PreviewUploader
 
   validates :title, :content, :preview, :preview_img, presence: true
+
+  def description_filled
+    description.present? ? '✅' : '❌'
+  end
+
+  def keywords_filled
+    keywords.present? ? '✅' : '❌'
+  end
 end
