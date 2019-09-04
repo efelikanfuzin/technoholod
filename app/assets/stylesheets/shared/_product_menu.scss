@@ -40,6 +40,23 @@
         top: 8px;
       }
     }
+
+    .selected-product {
+      color: $blue;
+
+      &::before {
+        content: '';
+        width: 5px;
+        height: 9px;
+        background: url(asset-path('title_arrow.png')) center no-repeat;
+        background-size: cover;
+        display: inline-block;
+        margin-bottom: 1px;
+        position: absolute;
+        left: 5px;
+        top: 8px;
+      }
+    }
   } 
 
   &_title::before {
