@@ -6,6 +6,6 @@
 
   .left-side
     = render 'shared/product_menu', products: @products
-  .right-side.cf.text_content
+  .right-side.cf.text_content.products
     h1.title = @product.title
     p = raw @product.description

@@ -19,7 +19,7 @@ class PagesController < ApplicationController
   end
 
   def products
-    @product = Product.all
+    @products = Product.all.group_by(&:products_type)
   end
 
   private

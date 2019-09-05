@@ -1,14 +1,14 @@
 .product-menu
   .product-menu_item
     span.product-menu_item_title Оборудование для общепита
-    - for product in products.public_catering
+    - for product in products['public_catering']
       .product-menu_item_sub
         = link_to product.title, product, rel: :canonical, class: selected_product_class(params[:id], product)
     span.product-menu_item_title Оборудование для магазина
-    - for product in products.store_items
+    - for product in products['store_items']
       .product-menu_item_sub
         = link_to product.title, product, rel: :canonical, class: selected_product_class(params[:id], product)
     span.product-menu_item_title Мебель, посуда, сервировка
-    - for product in products.furniture
+    - for product in products['furniture']
       .product-menu_item_sub
         = link_to product.title, product, rel: :canonical, class: selected_product_class(params[:id], product)

@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   def show
     @product = Product.friendly.find(params[:id])
     set_meta_tags @product.slice(:title, :meta_description, :meta_keywords)
-    @products = Product.all
+    @products = Product.all.group_by(&:products_type)
 
     render(status: :not_found) && return unless @product
   end
