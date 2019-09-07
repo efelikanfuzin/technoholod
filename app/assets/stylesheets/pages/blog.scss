@@ -20,11 +20,18 @@
   &_title {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
+    display: inline-block;
+    width: 85%;
   }
 
   &_big_content {
     font-size: 21px;
     line-height: 1.5;
+  }
+
+  &-date {
+    color: $gray;
+    font-size: .9rem;
   }
 }
 

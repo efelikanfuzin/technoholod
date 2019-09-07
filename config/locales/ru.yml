@@ -166,3 +166,7 @@ ru:
         show: "Показывать?"
         created_at: "Дата создания"
         updated_at: "Дата обновления"
+  time:
+    formats:
+      blog_date: "%-d %b %Y"
+
