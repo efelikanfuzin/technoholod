@@ -25,6 +25,7 @@ gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'uglifier'
 gem 'whenever', require: false
+gem 'pg_search'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-swiper'

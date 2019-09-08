@@ -2,7 +2,21 @@
 
 class BlogsController < ApplicationController
   def index
-    @blog_posts = Blog.page(params[:page]).order(id: :desc).per(5)
+    if params[:search].present?
+      @search_results_posts =
+        Blog.search_by_title_and_content(params[:search])
+            .page(params[:page])
+            .order(id: :desc)
+            .per(5)
+
+      respond_to do |format|
+        format.js { render partial: 'search-results' }
+      end
+    else
+      @blog_posts = Blog.page(params[:page])
+                        .order(id: :desc)
+                        .per(5)
+    end
 
     page = Page.find_by(name: :blogs)
     set_meta_tags page.slice(:title, :description, :keywords) if page

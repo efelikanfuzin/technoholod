@@ -175,6 +175,9 @@ GEM
     parser (2.6.4.0)
       ast (~> 2.4.0)
     pg (0.21.0)
+    pg_search (2.3.0)
+      activerecord (>= 4.2)
+      activesupport (>= 4.2)
     powerpack (0.1.2)
     pry (0.12.2)
       coderay (~> 1.1.0)
@@ -307,6 +310,7 @@ DEPENDENCIES
   meta-tags
   mini_magick
   pg (~> 0.18)
+  pg_search
   pry
   puma
   rails (= 5.2.0.rc2)
