@@ -2,12 +2,12 @@
   .swiper-wrapper
     - for review in reviews
       .swiper-slide
-        .reviews_slide
+        .reviews_slide itemprop="review" itemscope="" itemtype="http://schema.org/Review"
           .reviews_author
             .reviews_author_avatar
               = image_tag(review.photo.url, width: "150px") 
-            p.reviews_author_name = review.full_name
+            p.reviews_author_name itemprop="author" = review.full_name
             p.reviews_author_job = review.job
           .reviews_text
-            span = raw review.content
+            span itemprop="reviewBody" = raw review.content
   .swiper-pagination
