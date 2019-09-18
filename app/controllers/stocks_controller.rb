@@ -5,12 +5,17 @@ class StocksController < ApplicationController
 
   def show
     id_not_slug? && redirect_to(stock_path(@stock), status: :moved_permanently)
-    set_meta_tags @stock.slice(:title, :meta_description, :meta_keywords)
+
+    set_meta_tags(
+      title: @stock.title,
+      description: @stock.meta_description,
+      keywords: @stock.meta_keywords
+    )
   end
 
   def index
     page = Page.find_by(name: :stocks)
-    set_meta_tags page.slice(:title, :description, :keywords) if page
+    set_meta_tags(page.slice(:title, :description, :keywords)) if page
 
     @stocks = Stock.page(params[:page]).order(id: :desc).per(8)
   end
