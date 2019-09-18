@@ -1,5 +1,6 @@
 ._projects {
   min-height: calc(100vh - 175px);
+  margin-top: 5rem;
 }
 
 .project-item {
@@ -52,7 +53,7 @@
   margin-left: 35px;
 }
 
-.project-gall{
+.project-gall {
   position: relative;
 
   .swiper-container {

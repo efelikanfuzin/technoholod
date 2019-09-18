@@ -11,6 +11,8 @@
 }
 
 .header {
+  position: static;
+
   &_logo {
     float: left;
     width: 131px;
@@ -61,6 +63,14 @@
   }
 }
 
+@media (min-width: 800px) {
+  .sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-bottom: 1rem;
+  }
+}
 @media (max-width: 767px) {
   .header {
     &_logo {
