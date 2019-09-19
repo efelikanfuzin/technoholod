@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   def contacts; end
 
   def feedback
-    UserMailer.feedback(feedback_params.to_h).deliver_later if verify_recaptcha
+    real_user? && UserMailer.feedback(feedback_params.to_h).deliver_later
 
     redirect_to root_path
   end
@@ -30,6 +30,11 @@ class PagesController < ApplicationController
 
   def update_meta_tags
     page = Page.find_by(name: params[:action])
-    set_meta_tags page.slice(:title, :description, :keywords) if page
+    page && set_meta_tags(page.slice(:title, :description, :keywords))
+  end
+
+  def real_user?
+    params[:second_email].blank? &&
+      (Time.current.to_i - params[:timestamp].to_i) > 5
   end
 end

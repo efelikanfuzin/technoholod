@@ -8,19 +8,19 @@
   .pros.mobile_hide
     .pros_item
       = image_tag('3.png')
-      .pros_text  Дизайн-проект
+      .pros_text Дизайн-проект
     .pros_item
       = image_tag('1.png')
-      .pros_text  Консультации специалистов
+      .pros_text Консультации специалистов
     .pros_item
       = image_tag('2.png')
-      .pros_text  Индивидуальный подход
+      .pros_text Индивидуальный подход
     .pros_item
       = image_tag('5.png')
-      .pros_text Монтаж, сервисное обслуживание
+      .pros_text Монтаж,сервисное обслуживание
     .pros_item
       = image_tag('4.png')
-      .pros_text  Широкий ассортимент
+      .pros_text Широкий ассортимент
 
 .content
   .about.text_content
@@ -29,7 +29,7 @@
     p.about_text Компания «ТехноХолод» предлагает комплексное решение по оснащению профессиональным оборудованием Вашего магазина, ресторана, кафе, бара, столовой, пиццерии.
 
     p.about_text
-      strong Мы предлагаем   широкий ассортимент профессионального оборудования
+      strong Мы предлагаем широкий ассортимент профессионального оборудования
       |  (отечественного и импортного производства), который позволит удовлетворить Ваши потребности для   оснащения объектов  различного формата, типа  и уровня обслуживания, ориентированных на покупателей с различным достатком и социальными запросами.
 
     p.about_text
@@ -41,7 +41,7 @@
       |  к вам и вашему объекту, позволит учесть все особенности  на этапе строительства и дальнейшей эксплуатации магазина, ресторана, кафе, столовой.
 
     p.about_text
-      strong Эксклюзивные условия  сотрудничества с поставщиками,
+      strong Эксклюзивные условия сотрудничества с поставщиками,
       |  позволяют в кратчайшие сроки выполнить договорённости о  поставке профессионального оборудования.
 
     p.about_text
@@ -49,12 +49,13 @@
 
   .feedback#feedback_block
     span.feedback_title ОБРАТНАЯ СВЯЗЬ
-    = form_tag("/feedback", method: "post", onsubmit: "yaCounter45741711.reachGoal('feedback'); return true;") do
+    = form_tag(feedback_path, method: :post) do
       = text_field_tag(:name, nil, placeholder: 'ФИО', class: 'form-input')
       = text_field_tag(:phone, nil, placeholder: 'Ваш телефон', class: 'form-input')
       = text_area_tag(:message, nil, placeholder: 'Ваше сообщение', class: 'form-area')
-      = recaptcha_tags id: :recaptcha
-      = submit_tag("ОТПРАВИТЬ ЗАЯВКУ", class: 'form-submit')
+      = text_field_tag(:second_email, nil, style: 'display: none;')
+      = text_field_tag(:timestamp, Time.current.to_i, hidden: true)
+      = submit_tag('ОТПРАВИТЬ ЗАЯВКУ', class: 'form-submit')
 
   - unless @stocks.empty?
     .stock.cf
